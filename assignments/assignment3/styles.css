@@ -75,8 +75,8 @@ body {
 
 /* Larger Resolutions */
 @media (min-width: 900px) {
-    #main-nav ul,
-    .flex-container{
+    #main-nav ul
+    {
         display: flex;
     }
 
