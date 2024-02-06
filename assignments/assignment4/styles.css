@@ -1,5 +1,4 @@
 /*structure*/
-h3 {text-align: center;}
 
 #main-header {
     background-color:aquamarine;
@@ -73,6 +72,9 @@ body {
 
 #main-content h2 {
     color:white;
+    text-align: center;
+    font-size: 24px;
+
 }
 
 /* Larger Resolutions */
