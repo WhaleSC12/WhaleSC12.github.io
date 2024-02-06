@@ -51,8 +51,8 @@
 #main-nav li {
     list-style-type: none;
     padding: 5px;
-    background-color: lightcoral;
-    border-bottom: 1px solid beige;
+    background-color: rgb(220, 50, 50);
+    border-bottom: 1px solid rgb(222, 222, 99);
 }
 
 #main-nav a {
@@ -75,12 +75,16 @@ body {
 
 /* Larger Resolutions */
 @media (min-width: 900px) {
-    #main-nav ul
-    {
+    #main-nav ul {
         display: flex;
     }
 
-    #main-nav li,
+    #main-nav li {
+        flex: 1;
+    }
+
+
+
     .col1of2,
     .col1of3,
     .col1of4 {
