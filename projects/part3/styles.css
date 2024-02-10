@@ -118,45 +118,37 @@ p, h2 {
 
 .news-text {
     position: absolute;
-    left: 30x;
     text-align: center;
     color: #666;
-    font-size: 25px;
+    font-size: 14px;
 
 }
 
 .breed-one {
     position: absolute;
-    top: 50%;
-    left: 100%;
     width: 295.325px;
     height: 196px;
-    transform: translate(-100%, -50%) translate3d(10px, 10px, 0px);
+    transform: translate(-100%, -50%) translate3d(-15px, -30px, 0px);
 }
 
 .breed-two {
     position: absolute;
-    top: 50%;
-    left: 100%;
+
     width: 295.325px;
     height: 196px;
-    transform: translate(-100%, -50%) translate3d(-30px, 30px, 0px);
+    transform: translate(-100%, -50%) translate3d(-15px, 30px, 0px);
 }
 
 .breed-three {
     position: absolute;
-    top: 50%;
-    left: 100%;
     width: 295.325px;
     height: 196px;
-    transform: translate(-100%, -50%) translate3d(10px, -10px, 0px);
+    transform: translate(-100%, -50%) translate3d(30px, -30px, 0px);
 }
 
 .breed-four {
     position: absolute;
-    top: 50%;
-    left: 100%;
     width: 295.325px;
     height: 196px;
-    transform: translate(-100%, -50%) translate3d(-30px, -30px, 0px);
+    transform: translate(-100%, -50%) translate3d(30px, 30px, 0px);
 }
