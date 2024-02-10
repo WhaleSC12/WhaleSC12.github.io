@@ -61,7 +61,7 @@ p, h2 {
     height: 100px;
 }
 
-.image {
+.gallery-image {
     position: absolute;
     top: 50%;
     left: 100%;
@@ -126,29 +126,32 @@ p, h2 {
 
 .breed-one {
     position: absolute;
-    width: 295.325px;
-    height: 196px;
-    top: 40px; left: 10px;
+    left: 223px;
+    top: 113px;
+    width: 182px;
+    height: 144px;
 }
 
 .breed-two {
     position: absolute;
-
-    width: 295.325px;
-    height: 196px;
-top: 40px; left: 150px;
+    width: 182px;
+    height: 144px;
+    top: 113px;
+    left: 577px;
 }
 
 .breed-three {
     position: absolute;
-    width: 295.325px;
-    height: 196px;
-top: 90px; left: 10px;
+    width: 182px;
+    height: 144px;
+    left: 223px;
+    top: 295px;
 }
 
 .breed-four {
     position: absolute;
-    width: 295.325px;
-    height: 196px;
-top: 90px; left: 150px;
+    width: 182px;
+    height: 144px;
+    left: 577px;
+    top: 295px;
 }
