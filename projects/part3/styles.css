@@ -98,10 +98,12 @@ p, h2 {
 
 .footer-text-header {
     position: absolute;
-    bottom: 40px; 
+    bottom: 90px; 
     width: 100%;
     text-align: center;
     color: #666;
+    font-size: 80px;
+
 }
 
 .footer-text {
@@ -110,4 +112,16 @@ p, h2 {
     width: 100%;
     text-align: center;
     color: #666;
+    font-size: 60px;
+
+}
+
+.news-text {
+    position: absolute;
+    left: 80px;
+    width: 100%;
+    text-align: center;
+    color: #666;
+    font-size: 90px;
+
 }
