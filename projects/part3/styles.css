@@ -21,9 +21,10 @@ p, h2 {
     text-align: center;
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 50px;
     transform: translateX(-50%);
 }
+
 
 .navigation {
     font-size: 40px;
