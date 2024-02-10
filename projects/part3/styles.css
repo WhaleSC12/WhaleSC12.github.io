@@ -64,9 +64,9 @@ p, h2 {
 .gallery-image {
     position: absolute;
     top: 50%;
-    left: 100%;
-    width: 295.325px;
-    height: 196px;
+    left: 80%;
+    width: 390px;
+    height: 300px;
     transform: translate(-100%, -50%) translate3d(-64px, 64px, 0px);
 }
 
@@ -116,12 +116,20 @@ p, h2 {
 
 }
 
+.news-header {
+    position: absolute;
+    font-size: 45px;
+    left: 217px;
+    top: 134px;
+}
+
 .news-text {
     position: absolute;
     text-align: center;
     color: #666;
-    font-size: 14px;
-
+    font-size: 26px;
+    left: 217px;
+    top: 204px;
 }
 
 .breed-one {
