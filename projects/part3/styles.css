@@ -155,3 +155,39 @@ p, h2 {
     left: 577px;
     top: 295px;
 }
+
+.breed-textone {
+    position: absolute;
+    width: 141px;
+    height: 101px;
+    font-size: 14px;
+    top: 135px;
+    left: 66px;
+}
+
+.breed-texttwo {
+    position: absolute;
+    width: 141px;
+    height: 101px;
+    font-size: 14px;
+    top: 317px;
+    left: 66px;
+}
+
+.breed-textthree {
+    position: absolute;
+    width: 141px;
+    height: 101px;
+    font-size: 14px;
+    left: 421px;
+    top: 135px;
+}
+
+.breed-textfour {
+    position: absolute;
+    width: 141px;
+    height: 101px;
+    font-size: 14px;
+    left: 421px;
+    top: 317px;
+}
