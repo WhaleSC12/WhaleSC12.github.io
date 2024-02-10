@@ -98,21 +98,21 @@ p, h2 {
 
 .footer-text-header {
     position: absolute;
-    bottom: 90px; 
+    bottom: 30px; 
     width: 100%;
     text-align: center;
     color: #666;
-    font-size: 80px;
+    font-size: 40px;
 
 }
 
 .footer-text {
     position: absolute;
-    bottom: 20px; 
+    bottom: 10px; 
     width: 100%;
     text-align: center;
     color: #666;
-    font-size: 60px;
+    font-size: 14px;
 
 }
 
