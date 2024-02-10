@@ -128,7 +128,7 @@ p, h2 {
     position: absolute;
     width: 295.325px;
     height: 196px;
-    transform: translate3d(-15px, -30px, 0px);
+    top: 40px; left: 10px;
 }
 
 .breed-two {
@@ -136,19 +136,19 @@ p, h2 {
 
     width: 295.325px;
     height: 196px;
-    transform: translate3d(-80px, 80px, 0px);
+top: 40px; left: 150px;
 }
 
 .breed-three {
     position: absolute;
     width: 295.325px;
     height: 196px;
-    transform: translate3d(80px, -80px, 0px);
+top: 90px; left: 10px;
 }
 
 .breed-four {
     position: absolute;
     width: 295.325px;
     height: 196px;
-    transform: translate3d(80px, 80px, 0px);
+top: 90px; left: 150px;
 }
