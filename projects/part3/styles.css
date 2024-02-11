@@ -116,6 +116,16 @@ p, h2 {
 
 }
 
+.contacttext {
+    position: absolute;
+    top: 40px; 
+    width: 100%;
+    text-align: center;
+    color: #666;
+    font-size: 40px;
+
+}
+
 
 .breed-one {
     position: absolute;
