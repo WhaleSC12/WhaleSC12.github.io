@@ -116,25 +116,6 @@ p, h2 {
 
 }
 
-.news-header {
-    position: absolute;
-    top: 30px; 
-    left: 40px;
-    width: 100%;
-    text-align: center;
-    color: #666;
-    font-size: 30px;
-}
-
-.news-text {
-    position: absolute;
-    top: 45px; 
-    left: 40px;
-    width: 100%;
-    text-align: center;
-    color: #666;
-    font-size: 18px;
-}
 
 .breed-one {
     position: absolute;
@@ -296,4 +277,35 @@ p, h2 {
   }
   .gwd-span-13z2 {
     font-size: 20px;
+  }
+
+  .gwd-span-nvvn {
+    position: absolute;
+    left: 90px;
+    top: 87px;
+    font-size: 30px;
+  }
+  .gwd-span-mjiz {
+    position: absolute;
+    left: 90px;
+    top: 146px;
+    width: 274.075px;
+    height: 66px;
+    font-size: 30px;
+  }
+  .gwd-span-1msa {
+    position: absolute;
+    left: 90px;
+    top: 230px;
+    width: 274.075px;
+    height: 66px;
+    font-size: 30px;
+  }
+  .gwd-span-cmk8 {
+    position: absolute;
+    width: 274.075px;
+    height: 66px;
+    font-size: 30px;
+    left: 90px;
+    top: 320px;
   }
