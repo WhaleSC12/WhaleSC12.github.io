@@ -256,3 +256,56 @@ p, h2 {
     left: 472px;
     top: 263px;
   }
+
+  .text1 {
+    position: absolute;
+    left: 90px;
+    top: 87px;
+    font-size: 30px;
+  }
+  
+  .text2 {
+    position: absolute;
+    top: 87px;
+    font-size: 30px;
+    left: 432px;
+  }
+  
+  .content1 {
+    position: absolute;
+    left: 0px;
+    top: 46px;
+    width: 274.075px;
+    height: 264px;
+  }
+  
+  .image1 {
+    position: absolute;
+    left: 90px;
+    top: 121.4px;
+    width: 274.075px;
+    height: 159.6px;
+  }
+  
+  .content2 {
+    position: absolute;
+    left: 90px;
+    top: 281px;
+    width: 274px;
+    height: 143px;
+    font-size: 20px;
+  }
+  
+  .text1,
+  .text2,
+  .content1,
+  .image1,
+  .content2 {
+    font-family: Arial, sans-serif;
+  }
+  
+  .text2,
+  .content2 {
+    font-size: 20px;
+  }
+  
