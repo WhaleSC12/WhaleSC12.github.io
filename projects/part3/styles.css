@@ -117,11 +117,23 @@ p, h2 {
 }
 
 .news-header {
-
+    position: absolute;
+    top: 30px; 
+    left: 40px;
+    width: 100%;
+    text-align: center;
+    color: #666;
+    font-size: 30px;
 }
 
 .news-text {
-
+    position: absolute;
+    top: 45px; 
+    left: 40px;
+    width: 100%;
+    text-align: center;
+    color: #666;
+    font-size: 18px;
 }
 
 .breed-one {
@@ -245,42 +257,4 @@ p, h2 {
     font-size: 20px;
     left: 472px;
     top: 263px;
-  }
-
-  .gwd-span-nvvn {
-    position: absolute;
-    left: 90px;
-    top: 87px;
-    font-size: 30px;
-  }
-  .gwd-img-mvba {
-    position: absolute;
-    left: 90px;
-    top: 121.4px;
-    width: 274.075px;
-    height: 159.6px;
-  }
-  .gwd-span-1ygh {
-    position: absolute;
-    left: 90px;
-    top: 281px;
-    width: 274px;
-    height: 143px;
-    font-size: 20px;
-  }
-  .gwd-span-bi3g {
-    position: absolute;
-    top: 87px;
-    font-size: 30px;
-    left: 432px;
-  }
-  .gwd-span-1pvb {
-    position: absolute;
-    left: 0px;
-    top: 46px;
-    width: 274.075px;
-    height: 264px;
-  }
-  .gwd-span-13z2 {
-    font-size: 20px;
   }
