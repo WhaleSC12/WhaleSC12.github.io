@@ -283,26 +283,29 @@ p, h2 {
 
 
 
-  
 
-  .gwd-span-dasd {
+
+
+
+
+  .gwd-span-nvvn {
     position: absolute;
-    left: 40px;
-    top: 34px;
+    left: 90px;
+    top: 87px;
     font-size: 30px;
   }
   .gwd-span-mjiz {
     position: absolute;
-    left: 40px;
-    top: 60px;
+    left: 90px;
+    top: 146px;
     width: 274.075px;
     height: 66px;
     font-size: 30px;
   }
   .gwd-span-1msa {
     position: absolute;
-    left: 30px;
-    top: 75px;
+    left: 90px;
+    top: 230px;
     width: 274.075px;
     height: 66px;
     font-size: 30px;
@@ -312,6 +315,6 @@ p, h2 {
     width: 274.075px;
     height: 66px;
     font-size: 30px;
-    left: 40px;
-    top: 85px;
+    left: 90px;
+    top: 320px;
   }
