@@ -117,21 +117,11 @@ p, h2 {
 }
 
 .news-header {
-    position: absolute;
-    font-size: 30px;
-    left: 202px;
-    width: 228px;
-    height: 76px;
-    top: 249px;
+
 }
 
 .news-text {
-    position: absolute;
-    font-size: 30px;
-    left: 202px;
-    width: 228px;
-    height: 76px;
-    top: 325px;
+
 }
 
 .breed-one {
@@ -257,37 +247,20 @@ p, h2 {
     top: 263px;
   }
 
-  .text1 {
+  .gwd-span-nvvn {
     position: absolute;
     left: 90px;
     top: 87px;
     font-size: 30px;
   }
-  
-  .text2 {
-    position: absolute;
-    top: 87px;
-    font-size: 30px;
-    left: 432px;
-  }
-  
-  .content1 {
-    position: absolute;
-    left: 0px;
-    top: 46px;
-    width: 274.075px;
-    height: 264px;
-  }
-  
-  .image1 {
+  .gwd-img-mvba {
     position: absolute;
     left: 90px;
     top: 121.4px;
     width: 274.075px;
     height: 159.6px;
   }
-  
-  .content2 {
+  .gwd-span-1ygh {
     position: absolute;
     left: 90px;
     top: 281px;
@@ -295,17 +268,19 @@ p, h2 {
     height: 143px;
     font-size: 20px;
   }
-  
-  .text1,
-  .text2,
-  .content1,
-  .image1,
-  .content2 {
-    font-family: Arial, sans-serif;
+  .gwd-span-bi3g {
+    position: absolute;
+    top: 87px;
+    font-size: 30px;
+    left: 432px;
   }
-  
-  .text2,
-  .content2 {
+  .gwd-span-1pvb {
+    position: absolute;
+    left: 0px;
+    top: 46px;
+    width: 274.075px;
+    height: 264px;
+  }
+  .gwd-span-13z2 {
     font-size: 20px;
   }
-  
