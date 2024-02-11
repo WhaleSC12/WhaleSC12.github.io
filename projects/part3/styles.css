@@ -241,20 +241,38 @@ p, h2 {
   }
 
   
-  .gwd-span-nvvn {
+  .styleone {
     position: absolute;
-    left: 90px;
-    top: 87px;
+    left: 40px;
+    top: 40px;
     font-size: 30px;
   }
-  .gwd-img-mvba {
+    .styletwo {
     position: absolute;
-    left: 30px;
-    top: 40px;
+    top: 50px;
+    font-size: 50px;
+    left: 200px;
+  }
+  .stylethree {
+    position: absolute;
+    left: 20px;
+    top: 30px;
     width: 274.075px;
     height: 159.6px;
   }
-  .gwd-span-1ygh {
+
+  .stylefour {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    width: 274.075px;
+    height: 264px;
+  }
+  .stylefive {
+    font-size: 20px;
+  }
+
+  .stylesix {
     position: absolute;
     left: 30x;
     top: 60px;
@@ -262,23 +280,6 @@ p, h2 {
     height: 143px;
     font-size: 20px;
   }
-  .gwd-span-bi3g {
-    position: absolute;
-    top: 30px;
-    font-size: 30px;
-    left: 200px;
-  }
-  .gwd-span-1pvb {
-    position: absolute;
-    left: 30px;
-    top: 20px;
-    width: 274.075px;
-    height: 264px;
-  }
-  .gwd-span-13z2 {
-    font-size: 20px;
-  }
-
 
 
 
