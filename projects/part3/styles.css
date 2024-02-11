@@ -118,18 +118,22 @@ p, h2 {
 
 .news-header {
     position: absolute;
-    font-size: 45px;
-    left: 217px;
-    top: 134px;
+    font-size: 30px;
+    left: 202px;
+    width: 228px;
+    transform-origin: 50% 50% 0px;
+    height: 76px;
+    top: 249px;
 }
 
 .news-text {
     position: absolute;
-    text-align: center;
-    color: #666;
-    font-size: 26px;
-    left: 217px;
-    top: 204px;
+    font-size: 30px;
+    left: 202px;
+    width: 228px;
+    transform-origin: 50% 50% 0px;
+    height: 76px;
+    top: 325px;
 }
 
 .breed-one {
