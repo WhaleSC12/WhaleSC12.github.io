@@ -1,4 +1,4 @@
-// JavaScript for toggling menu
+//  menu
 function toggleMenu() {
     var menuItems = document.getElementById('menuItems');
     menuItems.style.display = (menuItems.style.display === 'block') ? 'none' : 'block';
@@ -6,7 +6,7 @@ function toggleMenu() {
     arrow.innerHTML = (menuItems.style.display === 'block') ? '&#9650;' : '&#9660;';
   }
   
-  // JavaScript for toggling exercises
+  //  toggling 
   function toggleExercise(exercise) {
     var enterCommand = document.getElementById('enterCommand');
     var yogaSlide = document.getElementById('yogaSlide');
@@ -19,7 +19,7 @@ function toggleMenu() {
     }
   }
   
-  // JavaScript for Exercise 1
+  // Exercise 1
   function changePicture() {
     console.log("Function called");
     var input = document.getElementById('commandInput').value.toLowerCase();
@@ -54,14 +54,13 @@ function toggleMenu() {
         break;
       default:
         console.log("Inside default case");
-        // Handle default case, e.g., show a default image
         break;
     }
   }
   
   
   
-  // JavaScript for Exercise 2
+  //  Exercise 2
   function changeYogaImage() {
     var slider = document.getElementById('yogaSlider');
     var image = document.getElementById('yogaImage');
