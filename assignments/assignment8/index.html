@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox and JavaScript Exercises</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Flexbox and JavaScript Exercises</h1>
+    <nav id="menu">
+      <button id="toggleMenu" onclick="toggleMenu()">&#9660;</button>
+      <ul id="menuItems">
+        <li><a href="#" onclick="toggleExercise(1)">Exercise 1</a></li>
+        <li><a href="#" onclick="toggleExercise(2)">Exercise 2</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="enterCommand">
+      <h2>Enter Command</h2>
+      <input type="text" id="commandInput" onkeyup="changePicture(event)">
+    </section>
+    <section id="yogaSlide">
+      <h2>Yoga Slider</h2>
+      <input type="range" id="yogaSlider" min="1" max="8" onchange="changeYogaImage()">
+      <img src="yoga1.jpg" alt="Yoga Image" id="yogaImage">
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
