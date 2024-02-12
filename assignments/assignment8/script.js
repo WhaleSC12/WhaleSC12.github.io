@@ -20,27 +20,34 @@ function toggleMenu() {
   }
   
   // JavaScript for Exercise 1
-  function changePicture(event) {
-    var input = event.target.value.toLowerCase();
+  function changePicture() {
+    var input = document.getElementById('commandInput').value.toLowerCase();
     var image = document.getElementById('yogaImage');
-    if (input === 'a') {
-      image.src = 'yoga1.jpg';
-    } else if (input === 'b') {
-      image.src = 'yoga2.jpg';
-    } else if (input === 'c') {
-      image.src = 'yoga3.jpg';
-    } else if (input === 'd') {
-      image.src = 'yoga4.jpg';  
-    } else if (input === 'e') {
-      image.src = 'yoga5.jpg';  
-    } else if (input === 'f') {
-      image.src = 'yoga6.jpg'  
-    } else if (input === 'g') {
-      image.src = 'yoga7.jpg';  
-    } else if (input === 'h') {
-      image.src = 'yoga8.jpg';
+    switch(input) {
+      case 'b':
+        image.src = 'read.jpg';
+        break;
+      case 'c':
+        image.src = 'clown.jpg';
+        break;
+      case 'p':
+        image.src = 'birthday.jpg';
+        break;
+      case 'r':
+        image.src = 'rain.jpg';
+        break;
+      case 's':
+        image.src = 'shovel.jpg';
+        break;
+      case 'w':
+        image.src = 'work.jpg';
+        break;
+      default:
+        // Handle default case, e.g., show a default image
+        break;
     }
   }
+  
   
   // JavaScript for Exercise 2
   function changeYogaImage() {

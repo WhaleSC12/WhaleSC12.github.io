@@ -20,7 +20,16 @@
   <main>
     <section id="enterCommand">
       <h2>Enter Command</h2>
-      <input type="text" id="commandInput" onkeyup="changePicture(event)">
+      <input type="text" id="commandInput" oninput="changePicture()">
+      <div>
+        <p>Options:</p>
+        <p>b: read a book</p>
+        <p>c: act like a clown</p>
+        <p>p: have a birthday party</p>
+        <p>r: walk in the rain</p>
+        <p>s: shovel up some dirt</p>
+        <p>w: go to work</p>
+      </div>
     </section>
     <section id="yogaSlide">
       <h2>Yoga Slider</h2>
