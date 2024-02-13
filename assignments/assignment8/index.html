@@ -3,40 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assignment 8</title>
+  <title>Flexbox and JavaScript Exercises</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Assignment 8</h1>
-            <h2>If Statements</h2>
-        </div>
-        <div class="exercise-links">
-            <div class="exercise" onclick="showExercise1()">Exercise 1</div>
-            <div class="exercise" onclick="showExercise2()">Exercise 2</div>
-        </div>
-        <div class="content-container" id="exercise1">
-            <div class="content">
-                <div class="commands">
-                    <p>a: walk in the rain</p>
-                    <p>b: shovel</p>
-                    <p>c: clown</p>
-                </div>
-                <img src="" alt="Image" style="display: none;">
-            </div>
-        </div>
-        <div class="content-container" id="exercise2" style="display: none;">
-            <h3>Yoga Slider</h3>
-            <div class="content">
-                <img src="" alt="Yoga Image">
-                <input type="range" id="yogaSlider" class="yoga-slider" min="1" max="8" value="1"
-                    onchange="changeYogaImage()">
-            </div>
-        </div>
-    </div>
-
-
-
-</body>  
+  <header>
+    <h1>Flexbox and JavaScript Exercises</h1>
+    <nav id="menu">
+      <button id="toggleMenu" onclick="toggleMenu()">&#9660;</button>
+      <ul id="menuItems">
+        <li><a href="#" onclick="toggleExercise(1)">Exercise 1</a></li>
+        <li><a href="#" onclick="toggleExercise(2)">Exercise 2</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="enterCommand">
+      <h2>Enter Command</h2>
+      <input type="text" id="commandInput" onkeyup="changePicture(event)">
+    </section>
+    <section id="yogaSlide">
+      <h2>Yoga Slider</h2>
+      <input type="range" id="yogaSlider" min="1" max="8" onchange="changeYogaImage()">
+      <img src="yoga1.jpg" alt="Yoga Image" id="yogaImage">
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
 </html>
