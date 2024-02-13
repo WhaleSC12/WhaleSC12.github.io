@@ -38,11 +38,11 @@ function changeYogaImage() {
 }
 
 function showExercise1() {
-    document.getElementById('exercise1').style.display = 'block';
+    document.getElementById('exercise1').style.display = 'flex';
     document.getElementById('exercise2').style.display = 'none';
 }
 
 function showExercise2() {
     document.getElementById('exercise1').style.display = 'none';
-    document.getElementById('exercise2').style.display = 'block';
+    document.getElementById('exercise2').style.display = 'flex';
 }

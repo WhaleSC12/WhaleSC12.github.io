@@ -16,20 +16,26 @@
             <div class="exercise" onclick="showExercise1()">Exercise 1</div>
             <div class="exercise" onclick="showExercise2()">Exercise 2</div>
         </div>
-        <div class="content" id="exercise1">
-            <div class="commands">
-                <p>a: walk in the rain</p>
-                <p>b: shovel</p>
-                <p>c: clown</p>
+        <div class="content-container" id="exercise1">
+            <div class="content">
+                <div class="commands">
+                    <p>a: walk in the rain</p>
+                    <p>b: shovel</p>
+                    <p>c: clown</p>
+                </div>
+                <img src="" alt="Image" style="display: none;">
             </div>
-            <img src="" alt="Image" style="display: none;">
         </div>
-        <div class="content" id="exercise2" style="display: none;">
+        <div class="content-container" id="exercise2" style="display: none;">
             <h3>Yoga Slider</h3>
-            <img src="" alt="Yoga Image">
-            <input type="range" id="yogaSlider" class="yoga-slider" min="1" max="8" value="1" onchange="changeYogaImage()">
+            <div class="content">
+                <img src="" alt="Yoga Image">
+                <input type="range" id="yogaSlider" class="yoga-slider" min="1" max="8" value="1"
+                    onchange="changeYogaImage()">
+            </div>
         </div>
     </div>
+
 
 
 </body>  
