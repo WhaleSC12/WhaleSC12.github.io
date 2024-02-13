@@ -2,60 +2,34 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
+}
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  nav ul li a:hover {
-    cursor: pointer;
-  }
-  
-  #menuItems {
-    display: none;
-  }
-  
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-top: 50px;
-  }
-  
-  section {
-    margin-bottom: 20px;
-  }
-  
-  input[type="text"] {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.exercise-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.exercise {
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.commands-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.command-input {
+    margin-bottom: 10px;
     padding: 5px;
-    margin-right: 10px;
-  }
-  
-  #yogaImage {
-    width: 200px;
-    height: auto;
-  }
-  
+    border: 1px solid #ccc;
+}
+.yoga-slider {
+    width: 50%;
+    margin-top: 20px;
+}

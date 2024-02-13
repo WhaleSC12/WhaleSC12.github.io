@@ -3,40 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox and JavaScript Exercises</title>
+  <title>Assignment 8</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Flexbox and JavaScript Exercises</h1>
-    <nav id="menu">
-      <button id="toggleMenu" onclick="toggleMenu()">&#9660;</button>
-      <ul id="menuItems">
-        <li><a href="#" onclick="toggleExercise(1)">Exercise 1</a></li>
-        <li><a href="#" onclick="toggleExercise(2)">Exercise 2</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="enterCommand">
-      <h2>Enter Command</h2>
-      <input type="text" id="commandInput" oninput="changePicture()">
-      <div>
-        <p>Options:</p>
-        <p>b: read a book</p>
-        <p>c: act like a clown</p>
-        <p>p: have a birthday party</p>
-        <p>r: walk in the rain</p>
-        <p>s: shovel up some dirt</p>
-        <p>w: go to work</p>
-      </div>
-    </section>
-    <section id="yogaSlide">
-      <h2>Yoga Slider</h2>
-      <input type="range" id="yogaSlider" min="1" max="8" onchange="changeYogaImage()">
-      <img src="yoga1.jpg" alt="Yoga Image" id="yogaImage">
-    </section>
-  </main>
-  <script src="script.js"></script>
-</body>
+    <div class="container">
+        <h1>Assignment 8</h1>
+        <h2>If Statements</h2>
+        <div class="exercise-container">
+            <div class="exercise" onclick="showExercise1()">Exercise 1</div>
+            <div class="exercise" onclick="showExercise2()">Exercise 2</div>
+        </div>
+        <div id="exercise1" class="commands-container">
+            <h3>Enter command:</h3>
+            <input type="text" id="commandInput" class="command-input" onkeyup="changePicture()">
+            <div>
+                <span>b: read a book</span><br>
+                <span>c: act like a clown</span><br>
+                <span>p: have a birthday</span><br>
+                <span>r: walk in the rain</span><br>
+                <span>s: shovel up some dirt</span><br>
+                <span>w: go to work</span><br>
+            </div>
+            <img id="yogaImage" src="" alt="Image" style="display: none;">
+        </div>
+        <div id="exercise2" class="commands-container" style="display: none;">
+            <h3>Yoga Slider</h3>
+            <img id="yogaImage" src="" alt="Yoga Image">
+            <input type="range" id="yogaSlider" class="yoga-slider" min="1" max="8" value="1" onchange="changeYogaImage()">
+        </div>
+    </div>
+
+</body>  
 </html>
