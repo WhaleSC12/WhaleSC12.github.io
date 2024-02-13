@@ -23,33 +23,33 @@ function toggleMenu() {
   function changePicture() {
     var input = document.getElementById('commandInput').value.trim().toLowerCase();
     var image = document.getElementById('yogaImage');
-    
-    switch(input) {
-      case 'b':
-        image.src = 'read.jpg';
-        break;
-      case 'c':
-        image.src = 'clown.jpg';
-        break;
-      case 'p':
-        image.src = 'birthday.jpg';
-        break;
-      case 'r':
-        image.src = 'rain.jpg';
-        break;
-      case 's':
-        image.src = 'shovel.jpg';
-        break;
-      case 'w':
-        image.src = 'work.jpg';
-        break;
-      default:
-        // Handle default case, e.g., show a default image
-        break;
+  
+    if (input !== '') {
+      switch(input[input.length - 1]) {
+        case 'b':
+          image.src = 'read.jpg';
+          break;
+        case 'c':
+          image.src = 'clown.jpg';
+          break;
+        case 'p':
+          image.src = 'birthday.jpg';
+          break;
+        case 'r':
+          image.src = 'rain.jpg';
+          break;
+        case 's':
+          image.src = 'shovel.jpg';
+          break;
+        case 'w':
+          image.src = 'work.jpg';
+          break;
+        default:
+          // Handle default case, e.g., show a default image
+          break;
+      }
     }
   }
-  
-  
   
   
   //  Exercise 2
