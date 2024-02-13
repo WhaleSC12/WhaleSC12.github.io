@@ -21,42 +21,34 @@ function toggleMenu() {
   
   // Exercise 1
   function changePicture() {
-    console.log("Function called");
-    var input = document.getElementById('commandInput').value.toLowerCase();
-    console.log("Input:", input);
+    var input = document.getElementById('commandInput').value.trim().toLowerCase();
     var image = document.getElementById('yogaImage');
-    console.log("Image element:", image);
     
     switch(input) {
       case 'b':
-        console.log("Inside case 'b'");
         image.src = 'read.jpg';
         break;
       case 'c':
-        console.log("Inside case 'c'");
         image.src = 'clown.jpg';
         break;
       case 'p':
-        console.log("Inside case 'p'");
         image.src = 'birthday.jpg';
         break;
       case 'r':
-        console.log("Inside case 'r'");
         image.src = 'rain.jpg';
         break;
       case 's':
-        console.log("Inside case 's'");
         image.src = 'shovel.jpg';
         break;
       case 'w':
-        console.log("Inside case 'w'");
         image.src = 'work.jpg';
         break;
       default:
-        console.log("Inside default case");
+        // Handle default case, e.g., show a default image
         break;
     }
   }
+  
   
   
   
