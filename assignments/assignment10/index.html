@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advertisement Display</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+    #advertisement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #ccc;
+        padding: 20px;
+        max-width: 400px;
+    }
+    img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+<div id="advertisement">
+    <img id="adImage" src="" alt="Advertisement">
+    <p id="adAttribution"></p>
+</div>
+
+<script>
+    const advertisements = [
+        {
+            text: "Advertisement 1",
+            image: "https://via.placeholder.com/300",
+            attribution: "Image source: <a href='https://via.placeholder.com'>via.placeholder.com</a>"
+        },
+        {
+            text: "Advertisement 2",
+            image: "https://via.placeholder.com/300",
+            attribution: "Image source: <a href='https://via.placeholder.com'>via.placeholder.com</a>"
+        },
+        {
+            text: "Advertisement 3",
+            image: "https://via.placeholder.com/300",
+            attribution: "Image source: <a href='https://via.placeholder.com'>via.placeholder.com</a>"
+        },
+        {
+            text: "Advertisement 4",
+            image: "https://via.placeholder.com/300",
+            attribution: "Image source: <a href='https://via.placeholder.com'>via.placeholder.com</a>"
+        },
+        {
+            text: "Advertisement 5",
+            image: "https://via.placeholder.com/300",
+            attribution: "Image source: <a href='https://via.placeholder.com'>via.placeholder.com</a>"
+        }
+    ];
+
+    let currentIndex = 0;
+    const adImage = document.getElementById("adImage");
+    const adAttribution = document.getElementById("adAttribution");
+
+    function displayAdvertisement(index) {
+        const ad = advertisements[index];
+        adImage.src = ad.image;
+        adImage.alt = ad.text;
+        adAttribution.innerHTML = ad.attribution;
+    }
+
+    function nextAdvertisement() {
+        currentIndex = (currentIndex + 1) % advertisements.length;
+        displayAdvertisement(currentIndex);
+    }
+
+    displayAdvertisement(currentIndex);
+    setInterval(nextAdvertisement, 2000);
+</script>
+</body>
+</html>
