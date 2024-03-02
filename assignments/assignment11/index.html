@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Assignment 11</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -24,8 +25,17 @@
         </section>
     </div>
 
-    <div id="myModal" class="modal">
-        <div class="modal-content" id="modalContent"></div>
+    <div id="myModal" class="w3-modal">
+        <div class="w3-modal-content w3-card-4">
+            <header class="w3-container w3-teal">
+                <span onclick="document.getElementById('myModal').style.display='none'" class="w3-button w3-large w3-display-topright">&times;</span>
+                <h2>Modal Header</h2>
+            </header>
+            <div class="w3-container">
+                <p>Some text. Some text. Some text.</p>
+                <p>Some text. Some text. Some text.</p>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
