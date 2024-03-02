@@ -19,29 +19,33 @@ const apes = [
 
 function openModal(ape) {
     const modal = document.getElementById('myModal');
-    const modalContent = document.getElementById('modalContent');
+    const modalContent = document.querySelector('.w3-modal-content');
+    const closeModal = document.querySelector('.w3-modal .w3-button');
 
     modalContent.innerHTML = `
-        <div>
-            <p><strong>Name:</strong> ${ape.name}</p>
+        <header class="w3-container w3-teal">
+            <span onclick="document.getElementById('myModal').style.display='none'" class="w3-button w3-large w3-display-topright">&times;</span>
+            <h2>${ape.name}</h2>
+        </header>
+        <div class="w3-container">
             <p><strong>Description:</strong> ${ape.description}</p>
             <p><strong>Habitat:</strong> ${ape.habitat}</p>
             <p><strong>Diet:</strong> ${ape.diet}</p>
             <p><strong>Lifespan:</strong> ${ape.lifespan}</p>
             <p><strong>Endangered:</strong> ${ape.endangered}</p>
-        </div>
-        <div>
             <img src="${ape.image}" alt="${ape.name}">
         </div>
     `;
 
     modal.style.display = "block";
-}
-
-window.onclick = function(event) {
-    const modal = document.getElementById('myModal');
-    if (event.target == modal) {
+    
+    closeModal.onclick = function() {
         modal.style.display = "none";
-    }
-};
+    };
 
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+}
