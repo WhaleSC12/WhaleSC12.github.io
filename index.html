@@ -1,66 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        body {
-            font-family: 'Garamond', sans-serif; 
-            color: #4c0202; 
-            background: #2dd3cb; 
-        }
-
-        h1, h2 {
-            font-family: 'Garamond', sans-serif; 
-            color: #0066cc; 
-        }
-
-        #content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #04ca8f; 
-            border: 1px solid #cbbd63; 
-            box-shadow: 0 0 10px rgba(206, 236, 51, 0.1);
-        }
-
-        ul {
-            font-family: 'Garamond', sans-serif; 
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li a {
-            font-family: 'Garamond', sans-serif; 
-            text-decoration: none;
-            color: #4c0202; 
-        }
-
-
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCE 242 Assignments</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>CSCE 242: Client-Server Computing</h1>
+        <p>William Hale</p>
+    </header>
 
-    <div id="content">
-        <h1>William Hale's CSCE 242 Site</h1>
-        <p>
-            CSCE 242 is a class dedicated to learning how to design the front-end of a website
-            using HTML and CSS, using JavaScript to give it functionality, and learning to 
-            utilize nodes and server-side JavaScript to store and retrieve data from a server.
-        </p>
-        <h2>Assignments:</h2>
-        <ul>
-            <li>
-                <a href="assignments/assignment1/index.html">Assignment 1</a>
-            </li>
-            <li>
-                <a href="assignments/assignment2/index.html">Assignment 2</a>
-            </li>
-            <li>
-                <a href="assignments/assignment3/index.html">Assignment 3</a>
-            </li>
-            
-        </ul>
-    </div>
-
+    <main>
+        <section class="assignments">
+            <article class="assignment">
+                <h2>Assignment 1 – Basic HTML</h2>
+                <img src="assign1image.png" alt="Assignment 1 Image" class="assignment-image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus lacus augue. Duis sed tincidunt sapien.</p>
+            </article>
+            <article class="assignment">
+                <h2>Assignment 2 – Basic CSS</h2>
+                <img src="assign2image.jpg" alt="Assignment 2 Image" class="assignment-image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus lacus augue. Duis sed tincidunt sapien.</p>
+            </article>
+            <article class="assignment">
+                <h2>Assignment 3 – Page layout</h2>
+                <div class="placeholder"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus lacus augue. Duis sed tincidunt sapien.</p>
+            </article>
+        </section>
+    </main>
 
 
 </body>
