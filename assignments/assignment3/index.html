@@ -1,81 +1,84 @@
 <!DOCTYPE html>
 <!--My name is William Hale and this is csce 242-->
+<html lang="en">
 <head>
-    <title>Learning Flexbox</title>
-    <link rel="stylesheet" href="styles.css"/>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout with Flex</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header id="main-header">
+    <header>
         <h1>Layout with Flex</h1>
-        <nav id="main-nav">
-        <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-            <li><a href="#">Link 5</a></li>
-            <li><a href="#">Link 6</a></li>
-
-
-        </ul>
-        </nav>
     </header>
-    <main id="main-content">
-        <div class="flex-container">
-            <div style="flex-grow: 2">
-                <h3>Links</h3>
-                <p>
-                    <li><a href="#">Item 1</a></li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Item 3</a></li>
-                    <li><a href="#">Item 4</a></li>
 
-                </p>
-                </div>    
-                <div style="flex-grow: 8">
-                Big Ideas!
-                Idea 1
-                Image 1
-                blablablba
-                Idea 2
-                Image 2
-                blabablalb
-                Idea 3
-                Image 3
-                blablabla
-                </div>
-                </div>
-            </div>
-      
-        </div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
 
+    <section class="content">
+        <aside class="links">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+            </ul>
+        </aside>
 
-        <div class="flex-container">
-            <section class="col1of4 column">
-            Title 1
-            Image
-            bla blablab
-            <section class="col1of4 column">
-            Title 2
-            Image
-            blablablabl
-            </section>
-            <section class="col1of4 column">
-            Title 3
-            image
-            blabblablaba
-            </section>
-            <section class="col1of4 column">
-            Title 3
-            image
-            blabblablaba
-            </section>
-        </div>
-        <h2>Sub Heading</h2>
-        </main>
-        <footer id="main-footer">
-            <p>William Hale</p>
-        </footer>
-    </main>
+        <section class="articles">
+            <article>
+                <h2>Title 1</h2>
+                <img src="https://place-hold.it/200x200" alt="Placeholder Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </article>
+            <article>
+                <h2>Title 2</h2>
+                <img src="https://place-hold.it/200x200" alt="Placeholder Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </article>
+            <article>
+                <h2>Title 3</h2>
+                <img src="https://place-hold.it/200x200" alt="Placeholder Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </article>
+            <article>
+                <h2>Title 4</h2>
+                <img src="https://place-hold.it/200x200" alt="Placeholder Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </article>
+        </section>
+    </section>
+
+    <section class="big-ideas">
+        <h2>Big Ideas!</h2>
+        <article>
+            <h3>Idea 1</h3>
+            <img src="https://place-hold.it/200x200" alt="Placeholder Image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </article>
+        <article>
+            <h3>Idea 2</h3>
+            <img src="https://place-hold.it/200x200" alt="Placeholder Image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </article>
+        <article>
+            <h3>Idea 3</h3>
+            <img src="https://place-hold.it/200x200" alt="Placeholder Image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>@portiaplante.com</p>
+    </footer>
 </body>
+</html>
