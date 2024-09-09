@@ -4,7 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graduate School Admissions | University of South Carolina</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header {
+            background-color: #000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            background-color: #800000;
+            padding: 10px;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        /* Parallax Section */
+        .parallax {
+            background-image: url('path-to-your-image.png'); /* Replace with your image */
+            min-height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .parallax h1 {
+            font-size: 4em;
+            color: white;
+            background-color: rgba(128, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        /* Section Styling */
+        .content {
+            padding: 50px 10%;
+            background-color: #f4f4f4;
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            color: #800000;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #800000;
+            color: white;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        /* Grid for images and text */
+        .grid {
+            display: flex;
+            gap: 20px;
+        }
+
+        .grid-item {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #800000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            .grid {
+                flex-direction: column;
+            }
+
+            .parallax h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
 </head>
 <body>
 

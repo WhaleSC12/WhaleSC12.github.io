@@ -27,7 +27,8 @@ main {
     padding: 20px;
 }
 
-.assignments {
+/* Assignments and Projects Section */
+.assignments, .projects {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -35,7 +36,8 @@ main {
     margin: 20px 0;
 }
 
-.assignment {
+/* Individual Assignment and Project Articles */
+.assignment, .project {
     background-color: #e0e8f0;
     padding: 20px;
     border-radius: 10px;
@@ -46,19 +48,19 @@ main {
     box-sizing: border-box;
 }
 
-.assignment h2 {
+.assignment h2, .project h2 {
     font-size: 1.5em;
     margin-bottom: 15px;
 }
 
-.assignment img {
+.assignment img, .project img {
     width: 100%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 15px;
 }
 
-.assignment p {
+.assignment p, .project p {
     font-size: 1em;
     line-height: 1.5;
 }
@@ -73,13 +75,14 @@ footer {
     width: 100%;
 }
 
+/* Responsive Styling */
 @media (max-width: 768px) {
-    .assignments {
+    .assignments, .projects {
         flex-direction: column;
         align-items: center;
     }
 
-    .assignment {
+    .assignment, .project {
         max-width: 100%;
         margin-bottom: 20px;
     }
