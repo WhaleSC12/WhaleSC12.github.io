@@ -26,7 +26,7 @@ header p {
 main {
     padding: 20px;
 }
-/* Assignments Section */
+
 .assignments {
     display: flex;
     justify-content: space-between;
@@ -35,18 +35,17 @@ main {
     margin: 20px 0;
 }
 
-/* Projects Section - Separate Style */
 .projects {
     display: flex;
     flex-direction: column;
     gap: 40px;
     margin: 40px 0;
-    background-color: #f9f9f9; /* Light background for distinction */
+    background-color: #f9f9f9; 
     padding: 40px 20px;
     border-radius: 10px;
 }
 
-/* Shared Styling for Individual Assignments and Projects */
+
 .assignment, .project {
     background-color: #e0e8f0;
     padding: 20px;
@@ -56,10 +55,9 @@ main {
     box-sizing: border-box;
 }
 
-/* Specific to Projects */
 .project {
-    background-color: #f5f5f5; /* Lighter background for projects */
-    border: 1px solid #ccc; /* Light border for projects */
+    background-color: #f5f5f5; 
+    border: 1px solid #ccc; 
 }
 
 .assignment h2, .project h2 {
@@ -79,12 +77,10 @@ main {
     line-height: 1.5;
 }
 
-/* Add space between each project */
 .project {
     margin-bottom: 40px;
 }
 
-/* Responsive Styling */
 @media (max-width: 768px) {
     .assignments {
         flex-direction: column;
