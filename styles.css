@@ -1,5 +1,3 @@
-/* General styling remains the same for body, header, etc. */
-
 /* Assignments Section */
 .assignments {
     display: flex;
@@ -12,13 +10,11 @@
 /* Projects Section - Separate Style */
 .projects {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    gap: 40px;
     margin: 40px 0;
-    background-color: #fff0f0; /* Light red background */
-    padding: 20px;
-    border: 2px solid #800000; /* Burgundy border to match the theme */
+    background-color: #f9f9f9; /* Light background for distinction */
+    padding: 40px 20px;
     border-radius: 10px;
 }
 
@@ -29,15 +25,13 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex: 1;
-    min-width: 300px;
-    max-width: 31%;
     box-sizing: border-box;
 }
 
 /* Specific to Projects */
 .project {
-    background-color: #f9e0e0; /* Slightly different background for projects */
-    border: 2px solid #800000; /* Burgundy border for distinction */
+    background-color: #f5f5f5; /* Lighter background for projects */
+    border: 1px solid #ccc; /* Light border for projects */
 }
 
 .assignment h2, .project h2 {
@@ -57,20 +51,14 @@
     line-height: 1.5;
 }
 
-/* Footer remains unchanged */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+/* Add space between each project */
+.project {
+    margin-bottom: 40px;
 }
 
 /* Responsive Styling */
 @media (max-width: 768px) {
-    .assignments, .projects {
+    .assignments {
         flex-direction: column;
         align-items: center;
     }
