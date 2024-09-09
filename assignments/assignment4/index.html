@@ -3,208 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graduate School Admissions | University of South Carolina</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        header {
-            background-color: #000;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header nav {
-            display: flex;
-            justify-content: center;
-            background-color: #800000;
-            padding: 10px;
-        }
-
-        header nav a {
-            margin: 0 15px;
-            color: white;
-            text-transform: uppercase;
-        }
-
-        /* Parallax Section */
-        .parallax {
-            background-image: url('path-to-your-image.png'); /* Replace with your image */
-            min-height: 500px;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .parallax h1 {
-            font-size: 4em;
-            color: white;
-            background-color: rgba(128, 0, 0, 0.7);
-            padding: 10px;
-            text-align: center;
-            text-transform: uppercase;
-        }
-
-        /* Section Styling */
-        .content {
-            padding: 50px 10%;
-            background-color: #f4f4f4;
-        }
-
-        .content h2 {
-            font-size: 2.5em;
-            color: #800000;
-            margin-bottom: 20px;
-        }
-
-        .content p {
-            margin-bottom: 20px;
-            font-size: 1.2em;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: #800000;
-            color: white;
-            padding: 15px 25px;
-            font-size: 1.2em;
-            text-transform: uppercase;
-            cursor: pointer;
-        }
-
-        /* Grid for images and text */
-        .grid {
-            display: flex;
-            gap: 20px;
-        }
-
-        .grid-item {
-            flex: 1;
-            background-color: white;
-            padding: 20px;
-            text-align: center;
-            border: 1px solid #ddd;
-        }
-
-        .grid-item img {
-            width: 100%;
-            height: auto;
-        }
-
-        /* Footer styling */
-        footer {
-            background-color: #800000;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 50px;
-        }
-
-        /* Responsive layout */
-        @media (max-width: 768px) {
-            .grid {
-                flex-direction: column;
-            }
-
-            .parallax h1 {
-                font-size: 2.5em;
-            }
-        }
-    </style>
+    <title>Graduate School Admissions</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Header -->
     <header>
-        <h1>University of South Carolina</h1>
         <nav>
-            <a href="#">Study</a>
-            <a href="#">Experience</a>
-            <a href="#">Visit</a>
-            <a href="#">Admissions</a>
-            <a href="#">Research</a>
-            <a href="#">About</a>
-            <a href="#">News & Events</a>
-            <a href="#">Athletics</a>
+            <ul>
+                <li><a href="#">Study</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Visit</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Parallax Section -->
-    <section class="parallax">
-        <h1>Graduate School Admissions</h1>
+    <section class="hero">
+        <img src="https://place-hold.it/1920x500" alt="Hero Image">
+        <div class="hero-text">
+            <h1>Graduate School Admissions</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+        </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="content">
-        <h2>Expand on Your Education</h2>
-        <p>Expand on your undergraduate education through one of the more than 230 graduate and certificate programs at the University of South Carolina.</p>
-        <p>South Carolina, one of the first universities to confer the doctoral degree, established the Graduate School more than 115 years ago. Today, the university is home to more than 6,400 graduate students from 49 states and 83 different countries. With 56 nationally ranked programs, we're ready to help you excel in your field of study.</p>
-        <a href="#" class="cta-button">Application Requirements</a>
-    </section>
-
-    <!-- Program Section -->
-    <section class="content">
-        <h2>Your Educational Investment</h2>
-        <p>If you’re considering graduate school but wonder about the cost, you can get a rough estimate of tuition and fees. Evaluate your academic investment whether you’re a resident or nonresident, and learn about the required university and departmental fees that might apply.</p>
-        <a href="#" class="cta-button">Tuition and Fees</a>
-    </section>
-
-    <!-- Paying for School Section -->
-    <section class="content">
-        <h2>Paying for School</h2>
-        <div class="grid">
-            <div class="grid-item">
-                <img src="path-to-image-1.png" alt="Assistantships">
-                <h3>Assistantships</h3>
-                <p>Help faculty members teach classes or conduct research in return for tuition reductions and stipends.</p>
-            </div>
-            <div class="grid-item">
-                <img src="path-to-image-2.png" alt="Scholarships">
-                <h3>Scholarships</h3>
-                <p>Apply for grants, scholarships, and loans to make your graduate studies more affordable.</p>
-            </div>
-            <div class="grid-item">
-                <img src="path-to-image-3.png" alt="Fellowships">
-                <h3>Fellowships</h3>
-                <p>Access a wide range of merit-based financial awards through the Graduate School and national organizations.</p>
-            </div>
-            <div class="grid-item">
-                <img src="path-to-image-4.png" alt="Travel Grants">
-                <h3>Travel Grants</h3>
-                <p>Receive grants for international or domestic travel for research and academic purposes.</p>
+    <section class="explore">
+        <div class="content">
+            <img src="https://place-hold.it/400x300" alt="Explore Degree Programs">
+            <div class="explore-text">
+                <h2>Explore Degree Programs</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                <a href="#" class="btn">Application Requirements</a>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="content">
-        <h2>Take the Next Step</h2>
-        <p>With leading scholarly opportunities and a highly affordable off-campus lifestyle, the University of South Carolina is an ideal choice for graduate studies. Let’s make South Carolina your academic home, too.</p>
-        <a href="#" class="cta-button">Apply Now</a>
+    <section class="investment">
+        <h2>Your Educational Investment</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+        <a href="#" class="btn">Tuition and Fees</a>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 University of South Carolina | Privacy Policy | Contact</p>
-    </footer>
+    <section class="paying">
+        <h2>Paying for School</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://place-hold.it/300x200" alt="Assistantships">
+                <h3>Assistantships</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="https://place-hold.it/300x200" alt="Scholarships">
+                <h3>Scholarships and Financial Aid</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="https://place-hold.it/300x200" alt="Fellowships">
+                <h3>Fellowships and Awards</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="https://place-hold.it/300x200" alt="Travel Grants">
+                <h3>Travel Grants</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
 
+    <section class="cta">
+        <div class="cta-text">
+            <h2>Take the next step.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">Apply Now</a>
+        </div>
+        <img src="https://place-hold.it/400x500" alt="Graduate Image">
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>University of South Carolina</h3>
+            <ul>
+                <li><a href="#">Colleges & Schools</a></li>
+                <li><a href="#">Offices & Divisions</a></li>
+                <li><a href="#">Tools</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

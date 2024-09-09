@@ -30,8 +30,8 @@ main {
     padding: 20px;
 }
 
-/* Assignments Section */
-.assignments {
+/* Assignments and Projects Section - Unified Style */
+.assignments, .projects {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -39,8 +39,9 @@ main {
     margin: 20px 0;
 }
 
-.assignment {
-    background-color: #e0e8f0;
+/* Individual Assignment and Project Cards */
+.assignment, .project {
+    background-color: #e0e8f0; /* Same background color for both */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -50,56 +51,19 @@ main {
     box-sizing: border-box;
 }
 
-.assignment h2 {
+.assignment h2, .project h2 {
     font-size: 1.5em;
     margin-bottom: 15px;
 }
 
-.assignment img {
+.assignment img, .project img {
     width: 100%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 15px;
 }
 
-.assignment p {
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-/* Projects Section */
-.projects {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 20px 0;
-}
-
-.project {
-    background-color: #f5e8e8; /* Different background color for projects */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    min-width: 300px;
-    max-width: 31%;
-    box-sizing: border-box;
-}
-
-.project h2 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-}
-
-.project img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-.project p {
+.assignment p, .project p {
     font-size: 1em;
     line-height: 1.5;
 }
