@@ -12,7 +12,8 @@ document.getElementById('exercise2').addEventListener('click', function () {
 // Color Slider functionality
 document.getElementById('color-slider').addEventListener('input', function () {
     let redValue = this.value;
-    document.body.style.backgroundColor = `rgb(${redValue}, 0, 0)`;
+    let sliderContainer = document.getElementById('colorSliderSection');
+    sliderContainer.style.backgroundColor = `rgb(${redValue}, 0, 0)`; // Change color of only the container
 
     let message;
     if (redValue < 85) {
