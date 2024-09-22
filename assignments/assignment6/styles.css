@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.menu a {
+    text-decoration: none;
+    color: teal;
+    font-weight: bold;
+}
+
+.slider-container, .picture-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.slider-container.active, .picture-container.active {
+    display: block;
+}
+
+#color-slider {
+    width: 300px;
+}
+
+.message {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.picture-buttons button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.picture-display img {
+    width: auto;
+    height: auto;
+}

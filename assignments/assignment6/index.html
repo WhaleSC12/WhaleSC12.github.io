@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Assignment 8</h1>
+    <h2>If Statements</h2>
+    <div class="menu">
+        <a href="#" id="exercise1">Exercise 1</a>
+        <a href="#" id="exercise2">Exercise 2</a>
+    </div>
+
+    <div class="slider-container" id="colorSliderSection">
+        <h3>Color Slider</h3>
+        <input type="range" min="0" max="255" value="0" id="color-slider">
+        <div class="message" id="colorMessage">Move the slider to change color.</div>
+    </div>
+
+    <div class="picture-container" id="pictureChooserSection">
+        <h3>Picture Chooser</h3>
+        <div class="picture-buttons">
+            <button onclick="showPicture('small')">Small</button>
+            <button onclick="showPicture('medium')">Medium</button>
+            <button onclick="showPicture('large')">Large</button>
+        </div>
+        <div class="picture-display" id="pictureDisplay">
+            <img src="" alt="Selected Picture" id="picture">
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
