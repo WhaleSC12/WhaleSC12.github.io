@@ -1,368 +1,340 @@
+/* General Styling */
 html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    perspective: 1400px;
-    perspective-origin: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  perspective: 1400px;
+  perspective-origin: center;
 }
 
 body {
-    transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 p, h2 {
-    margin: 0;
+  margin: 0;
 }
 
+/* Headings and Navigation */
 .heading {
-    font-size: 40px;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50px;
-    transform: translateX(-50%);
+  font-size: 40px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
 }
-
 
 .navigation {
-    font-size: 40px;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    top: 100px;
-}
-
-.content {
-    position: absolute;
-    font-size: 16px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.footer {
-    position: absolute;
-    top: 112px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.footer-link {
-    font-size: 60px;
-}
-
-.logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 97.7625px;
-    height: 100px;
-}
-
-.gallery-image {
-    position: absolute;
-    top: 50%;
-    left: 80%;
-    width: 390px;
-    height: 300px;
-    transform: translate(-100%, -50%) translate3d(-64px, 64px, 0px);
+  font-size: 40px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 100px;
 }
 
 .navigation-bar {
-    background-color: #333;
-    text-align: center;
-    padding: 10px 0;
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0;
 }
 
 .navigation-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-list li {
-    display: inline;
+  display: inline;
 }
 
 .navigation-list li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
 }
 
 .navigation-list li a:hover {
-    background-color: #555;
+  background-color: #555;
+}
+
+/* Content Styling */
+.content {
+  position: absolute;
+  font-size: 16px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Footer Styling */
+.footer {
+  position: absolute;
+  top: 112px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-link {
+  font-size: 60px;
 }
 
 .footer-text-header {
-    position: absolute;
-    bottom: 40px; 
-    width: 100%;
-    text-align: center;
-    color: #666;
-    font-size: 40px;
-
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  color: #666;
+  font-size: 40px;
 }
 
 .footer-text {
-    position: absolute;
-    bottom: 10px; 
-    width: 100%;
-    text-align: center;
-    color: #666;
-    font-size: 14px;
-
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
 }
 
+/* Contact Section */
 .contacttext {
-    position: absolute;
-    top: 80px; 
-    width: 100%;
-    text-align: center;
-    color: #666;
-    font-size: 40px;
-
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  text-align: center;
+  color: #666;
+  font-size: 40px;
 }
 
+/* Bat Breed Sections */
+.breed-one, .breed-two, .breed-three, .breed-four {
+  position: absolute;
+  width: 182px;
+  height: 144px;
+}
 
 .breed-one {
-    position: absolute;
-    left: 223px;
-    top: 113px;
-    width: 182px;
-    height: 144px;
+  left: 223px;
+  top: 113px;
 }
 
 .breed-two {
-    position: absolute;
-    width: 182px;
-    height: 144px;
-    top: 113px;
-    left: 577px;
+  left: 577px;
+  top: 113px;
 }
 
 .breed-three {
-    position: absolute;
-    width: 182px;
-    height: 144px;
-    left: 223px;
-    top: 295px;
+  left: 223px;
+  top: 295px;
 }
 
 .breed-four {
-    position: absolute;
-    width: 182px;
-    height: 144px;
-    left: 577px;
-    top: 295px;
+  left: 577px;
+  top: 295px;
+}
+
+/* Breed Text Sections */
+.breed-textone, .breed-texttwo, .breed-textthree, .breed-textfour {
+  position: absolute;
+  width: 141px;
+  height: 101px;
+  font-size: 14px;
 }
 
 .breed-textone {
-    position: absolute;
-    width: 141px;
-    height: 101px;
-    font-size: 14px;
-    top: 135px;
-    left: 66px;
+  top: 135px;
+  left: 66px;
 }
 
 .breed-texttwo {
-    position: absolute;
-    width: 141px;
-    height: 101px;
-    font-size: 14px;
-    top: 317px;
-    left: 66px;
+  top: 317px;
+  left: 66px;
 }
 
 .breed-textthree {
-    position: absolute;
-    width: 141px;
-    height: 101px;
-    font-size: 14px;
-    left: 421px;
-    top: 135px;
+  left: 421px;
+  top: 135px;
 }
 
 .breed-textfour {
-    position: absolute;
-    width: 141px;
-    height: 101px;
-    font-size: 14px;
-    left: 421px;
-    top: 317px;
+  left: 421px;
+  top: 317px;
+}
+
+/* Text Sections */
+.textone, .textfive {
+  position: absolute;
+  font-size: 30px;
 }
 
 .textone {
-    position: absolute;
-    font-size: 30px;
-    top: 161px;
-    left: 64px;
-  }
-  .texttwo {
-    position: absolute;
-    width: 322px;
-    height: 299px;
-    top: 143px;
-    left: 42px;
-  }
-  .textthree {
-    position: absolute;
-    top: 230px;
-    font-size: 20px;
-    left: 64px;
-  }
-  .textfour {
-    position: absolute;
-    width: 278.263px;
-    height: 160px;
-    font-size: 20px;
-    top: 263px;
-    left: 64px;
-  }
-  .textfive {
-    position: absolute;
-    font-size: 30px;
-    left: 472px;
-    top: 161px;
-  }
-  .textsix {
-    position: absolute;
-    width: 322px;
-    height: 299px;
-    left: 450px;
-    top: 143px;
-  }
-  .textseven {
-    position: absolute;
-    font-size: 20px;
-    left: 472px;
-    top: 230px;
-  }
-  .texteight {
-    position: absolute;
-    width: 278.263px;
-    height: 160px;
-    font-size: 20px;
-    left: 472px;
-    top: 263px;
-  }
+  top: 161px;
+  left: 64px;
+}
 
-  
-  .styleone {
-    position: absolute;
-    left: 40px;
-    top: 40px;
-    font-size: 30px;
-  }
-    .styletwo {
-    position: absolute;
-    top: 50px;
-    font-size: 50px;
-    left: 200px;
-  }
-  .stylethree {
-    position: absolute;
-    left: 20px;
-    top: 30px;
-    width: 274.075px;
-    height: 159.6px;
-  }
+.textfive {
+  left: 472px;
+  top: 161px;
+}
 
-  .stylefour {
-    position: absolute;
-    left: 30px;
-    top: 20px;
-    width: 274.075px;
-    height: 264px;
-  }
-  .stylefive {
-    font-size: 20px;
-  }
+.texttwo, .textsix {
+  position: absolute;
+  width: 322px;
+  height: 299px;
+}
 
-  .stylesix {
-    position: absolute;
-    left: 30x;
-    top: 60px;
-    width: 274px;
-    height: 143px;
-    font-size: 20px;
-  }
+.texttwo {
+  top: 143px;
+  left: 42px;
+}
 
+.textsix {
+  left: 450px;
+  top: 143px;
+}
 
+.textthree, .textseven {
+  position: absolute;
+  top: 230px;
+  font-size: 20px;
+}
 
+.textthree {
+  left: 64px;
+}
 
+.textseven {
+  left: 472px;
+}
 
+.textfour, .texteight {
+  position: absolute;
+  width: 278.263px;
+  height: 160px;
+  font-size: 20px;
+}
 
+.textfour {
+  top: 263px;
+  left: 64px;
+}
 
+.texteight {
+  left: 472px;
+  top: 263px;
+}
 
-  .gwd-span-nvvn {
-    position: absolute;
-    left: 350px;
-    top: 146px;
-    font-size: 30px;
-  }
-  .gwd-span-mjiz {
-    position: absolute;
-    left: 350px;
-    top: 230px;
-    width: 274.075px;
-    height: 66px;
-    font-size: 30px;
-  }
-  .gwd-span-1msa {
-    position: absolute;
-    left: 350px;
-    top: 320px;
-    width: 274.075px;
-    height: 66px;
-    font-size: 30px;
-  }
-  .gwd-span-cmk8 {
-    position: absolute;
-    width: 274.075px;
-    height: 66px;
-    font-size: 30px;
-    left: 350px;
-    top: 420px;
-  }
+/* Style Sections */
+.styleone, .styletwo, .stylethree, .stylefour, .stylefive, .stylesix {
+  position: absolute;
+}
 
+.styleone {
+  left: 40px;
+  top: 40px;
+  font-size: 30px;
+}
 
+.styletwo {
+  top: 50px;
+  font-size: 50px;
+  left: 200px;
+}
 
+.stylethree {
+  left: 20px;
+  top: 30px;
+  width: 274.075px;
+  height: 159.6px;
+}
 
+.stylefour {
+  left: 30px;
+  top: 20px;
+  width: 274.075px;
+  height: 264px;
+}
 
+.stylefive {
+  font-size: 20px;
+}
 
+.stylesix {
+  left: 30px;
+  top: 60px;
+  width: 274px;
+  height: 143px;
+  font-size: 20px;
+}
 
+.gwd-img-1j2y {
+  position: absolute;
+  left: 112px;
+  top: 72px;
+  width: 164px;
+  height: 217px;
+}
 
-  .gwd-img-1j2y {
-    position: absolute;
-    left: 112px;
-    top: 72px;
-    width: 164px;
-    height: 217px;
-  }
-  .gwd-img-1eoi {
-    position: absolute;
-    width: 164px;
-    height: 217px;
-    top: 72px;
-    left: 533px;
-  }
-  .gwd-span-1z03 {
-    position: absolute;
-    left: 112px;
-    top: 306px;
-    width: 164px;
-    height: 79px;
-    font-size: 30px;
-  }
-  .gwd-span-7xy6 {
-    position: absolute;
-    width: 164px;
-    height: 79px;
-    font-size: 30px;
-    top: 306px;
-    left: 533px;
-  }
+.gwd-img-1eoi {
+  position: absolute;
+  width: 164px;
+  height: 217px;
+  top: 72px;
+  left: 533px;
+}
+
+.gwd-span-1z03 {
+  position: absolute;
+  left: 112px;
+  top: 306px;
+  width: 164px;
+  height: 79px;
+  font-size: 30px;
+}
+
+.gwd-span-7xy6 {
+  position: absolute;
+  width: 164px;
+  height: 79px;
+  font-size: 30px;
+  top: 306px;
+  left: 533px;
+}
+
+.gwd-span-nvvn {
+  position: absolute;
+  left: 350px;
+  top: 146px;
+  font-size: 30px;
+}
+
+.gwd-span-mjiz {
+  position: absolute;
+  left: 350px;
+  top: 230px;
+  width: 274.075px;
+  height: 66px;
+  font-size: 30px;
+}
+
+.gwd-span-1msa {
+  position: absolute;
+  left: 350px;
+  top: 320px;
+  width: 274.075px;
+  height: 66px;
+  font-size: 30px;
+}
+
+.gwd-span-cmk8 {
+  position: absolute;
+  width: 274.075px;
+  height: 66px;
+  font-size: 30px;
+  left: 350px;
+  top: 420px;
+}
