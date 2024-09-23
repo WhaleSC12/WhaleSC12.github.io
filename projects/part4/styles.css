@@ -155,9 +155,11 @@ p, h2 {
 
 /* Logo Styling */
 .logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
   width: 150px;
   height: auto;
-  margin: 20px 0;
 }
 
 .gwd-span-nvvn, .gwd-span-mjiz, .gwd-span-1msa, .gwd-span-cmk8 {
@@ -172,7 +174,10 @@ p, h2 {
   .logo {
     width: 80px;
     height: auto;
+    top: 10px;
+    left: 10px;
   }
+
 
   .gallery-image {
     width: 100%;
@@ -189,13 +194,11 @@ p, h2 {
     margin: 10px auto;
   }
 
-  /* Adjust heading font size for mobile */
   .heading {
     font-size: 24px;
     margin-top: 10px;
   }
 
-  /* Adjust footer text size */
   .footer-text-header {
     font-size: 18px;
   }
@@ -204,7 +207,6 @@ p, h2 {
     font-size: 12px;
   }
 
-  /* Adjust navigation for mobile */
   .navigation-list {
     flex-direction: column;
   }
@@ -213,13 +215,11 @@ p, h2 {
     margin-bottom: 10px;
   }
 
-  /* Adjust text wrapping */
   .content-text {
     text-align: center;
     margin-bottom: 20px;
   }
 
-  /* Ensure the container flexes properly */
   .container {
     flex-direction: column;
     margin: 10px;
