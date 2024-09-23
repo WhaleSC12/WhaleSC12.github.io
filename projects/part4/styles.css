@@ -100,10 +100,11 @@ p, h2 {
 
 /* Contact Section */
 .contacttext {
+  width: 100%;
   text-align: center;
   color: #666;
   font-size: 40px;
-  margin: 20px;
+  padding: 20px;
 }
 
 /* Bat Breed Sections */
@@ -169,6 +170,11 @@ p, h2 {
 }
 
 @media (max-width: 768px) {
+
+  .contacttext {
+    font-size: 24px; /* Smaller size for mobile */
+    padding: 10px;
+  }
 
   /* Adjust logo size on mobile */
   .logo {
