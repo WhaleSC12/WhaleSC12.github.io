@@ -271,6 +271,14 @@ p, h2 {
   font-size: 20px;
 }
 
+/* Logo styling */
+.logo {
+  position: absolute;
+  top: 20px;
+  width: 150px;
+  height: auto;
+}
+
 .gwd-img-1j2y {
   position: absolute;
   left: 112px;
@@ -337,4 +345,60 @@ p, h2 {
   font-size: 30px;
   left: 350px;
   top: 420px;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+
+  /* Adjust logo size on mobile */
+  .logo {
+    width: 80px;
+    height: auto;
+  }
+
+  .gallery-image {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .gwd-span-nvvn,
+  .gwd-span-mjiz,
+  .gwd-span-1msa,
+  .gwd-span-cmk8 {
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    margin: 10px auto;
+    transform: none;
+  }
+
+  /* Adjust heading font size for mobile */
+  .heading {
+    font-size: 24px;
+    top: 30px;
+  }
+
+  /* Adjust footer text size */
+  .footer-text-header {
+    font-size: 24px;
+    bottom: 20px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+    bottom: 5px;
+  }
+
+  /* Adjust navigation for mobile */
+  .navigation-list {
+    display: block;
+    text-align: center;
+  }
+
+  .navigation-list li {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
