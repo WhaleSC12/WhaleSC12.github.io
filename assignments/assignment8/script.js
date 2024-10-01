@@ -5,33 +5,33 @@ document.addEventListener("DOMContentLoaded", function () {
     // Associative array for images and their descriptions
     const images = [
         {
-            src: "image1.jpg",
-            title: "Party Hat",
+            src: "birthday.jpg",
+            title: "Birthday",
             description: "The character is celebrating with a party hat."
         },
         {
-            src: "image2.jpg",
-            title: "Koala Costume",
-            description: "The character is dressed in a koala costume."
+            src: "clown.jpg",
+            title: "Clown",
+            description: "The character is dressed as a clown."
         },
         {
-            src: "image3.jpg",
-            title: "Umbrella",
+            src: "rain.jpg",
+            title: "Rain",
             description: "I think it's time to bring your umbrella."
         },
         {
-            src: "image4.jpg",
-            title: "Clipboard",
+            src: "read.jpg",
+            title: "Read",
             description: "The character is holding a clipboard."
         },
         {
-            src: "image5.jpg",
-            title: "Gardening",
+            src: "shovel.jpg",
+            title: "Shovel",
             description: "The character is ready for some gardening."
         },
         {
-            src: "image6.jpg",
-            title: "Laptop",
+            src: "work.jpg",
+            title: "Work",
             description: "The character is working on a laptop."
         }
     ];
