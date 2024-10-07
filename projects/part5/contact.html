@@ -27,12 +27,12 @@
 
     <main class="container contact-container">
         <!-- Left Image Placeholder -->
-        <div class="image-placeholder">
+        <div class="image-placeholder" style="flex: 1;">
             <img src="images/conservation2.jpg" alt="conservation 2" style="width: 100%; max-width: 250px; height: auto;">
         </div>
 
         <!-- Contact Information -->
-        <div class="contact-info">
+        <div class="contact-info" style="flex: 2; text-align: center;">
             <img class="logo" src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Halloween-PNG-Pictures/Halloween_Bat_Silhouette_PNG_Clipart.png?m=1634115382" alt="Logo" style="max-width: 100px; height: auto;">
             <p class="contacttext">
                 Our hotline: <br> (803) 593-9440 <br><br>
@@ -47,11 +47,11 @@
                 - Prince Rupert, British Columbia <br>
                 - Halifax, Nova Scotia
             </p>
-            <img src="images/North-America-Map.png" alt="North America Map" style="width: 100%; max-width: 300px; height: auto; margin-top: 15px;">
+            <img src="images/North-America-Map.png" alt="North America Map" style="width: 100%; max-width: 900px; height: auto; margin-top: 15px;">
         </div>
 
         <!-- Right Image Placeholder -->
-        <div class="image-placeholder">
+        <div class="image-placeholder" style="flex: 1;">
             <img src="images/conservation.jpg" alt="conservation" style="width: 100%; max-width: 250px; height: auto;">
         </div>
     </main>
@@ -61,22 +61,22 @@
         <form action="submit_application.php" method="post" class="job-application-form centered-form">
             <div class="form-group">
                 <label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" required>
+                <input type="text" id="fullName" name="fullName" required class="centered-input">
             </div>
 
             <div class="form-group">
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required class="centered-input">
             </div>
 
             <div class="form-group">
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
+                <input type="tel" id="phone" name="phone" required class="centered-input">
             </div>
 
             <div class="form-group">
                 <label for="position">Position Applied For:</label>
-                <select id="position" name="position" required>
+                <select id="position" name="position" required class="centered-input">
                     <option value="Field Researcher">Field Researcher</option>
                     <option value="Conservation Educator">Conservation Educator</option>
                     <option value="Volunteer Coordinator">Volunteer Coordinator</option>
@@ -86,17 +86,17 @@
 
             <div class="form-group">
                 <label for="experience">Relevant Experience:</label>
-                <textarea id="experience" name="experience" rows="4" required></textarea>
+                <textarea id="experience" name="experience" rows="4" required class="centered-input"></textarea>
             </div>
 
             <div class="form-group">
                 <label for="whyJoin">Why Are You Interested in Working with Us?</label>
-                <textarea id="whyJoin" name="whyJoin" rows="4" required></textarea>
+                <textarea id="whyJoin" name="whyJoin" rows="4" required class="centered-input"></textarea>
             </div>
 
             <div class="form-group">
                 <label for="availability">Availability (Full-time/Part-time/Volunteer):</label>
-                <select id="availability" name="availability" required>
+                <select id="availability" name="availability" required class="centered-input">
                     <option value="Full-time">Full-time</option>
                     <option value="Part-time">Part-time</option>
                     <option value="Volunteer">Volunteer</option>
@@ -105,7 +105,7 @@
 
             <div class="form-group">
                 <label for="resume">Attach Resume (PDF only):</label>
-                <input type="file" id="resume" name="resume" accept=".pdf" required>
+                <input type="file" id="resume" name="resume" accept=".pdf" required class="centered-input">
             </div>
 
             <button type="submit" class="submit-button">Submit Application</button>

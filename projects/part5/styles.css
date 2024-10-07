@@ -492,16 +492,42 @@ p, h2 {
 }
 
 .contact-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  max-width: 1200px;
 }
 
-.contact-info {
-    flex: 1;
-    margin: 20px;
+.image-placeholder img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.contact-info img {
+  margin-bottom: 15px;
+}
+
+.centered-form {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.centered-input {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 5px;
+  text-align: center;
 }
 
 .shop-heading {
