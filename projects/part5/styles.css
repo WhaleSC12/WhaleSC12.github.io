@@ -8,23 +8,31 @@ html, body {
   perspective: 1400px;
   perspective-origin: center;
 }
-
+/*carousel*/
 .carousel {
   position: relative;
-  max-width: 100%;
-  margin: 20px auto;
+  max-width: 75%; /* Set carousel width to 75% of the screen */
+  margin: 20px auto; /* Center the carousel */
   overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for visual appeal */
 }
 
 .carousel-container {
   display: flex;
+  width: calc(100% * 3); /* Use a calculation to adjust based on slide count */
   transition: transform 0.5s ease-in-out;
 }
 
 .carousel-slide {
+  flex: 1 0 100%; /* Make each slide take up the full width of the container */
+  max-width: 100%;
+}
+
+.carousel-slide img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .carousel-btn {
@@ -36,6 +44,7 @@ html, body {
   border: none;
   padding: 10px;
   cursor: pointer;
+  z-index: 10;
 }
 
 .prev {
@@ -45,6 +54,7 @@ html, body {
 .next {
   right: 10px;
 }
+
 
 
 .gallery {

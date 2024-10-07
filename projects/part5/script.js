@@ -8,6 +8,7 @@ function closeMenu() {
     document.getElementById("mobileNav").style.width = "0";
 }
 
+// carousel
 let currentSlide = 0;
 
 function showSlide(index) {
@@ -25,7 +26,7 @@ function showSlide(index) {
 
     // Calculate offset for translation
     const offset = -currentSlide * 100;
-    document.getElementById('carouselContainer').style.transform = `translateX(${offset}%)`;
+    document.querySelector('.carousel-container').style.transform = `translateX(${offset}%)`;
 }
 
 function changeSlide(direction) {
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Optional: Auto-slide every 5 seconds
     setInterval(() => changeSlide(1), 5000);
 });
+
 
 // Bat breeds modal functionality
 document.addEventListener('DOMContentLoaded', () => {
@@ -140,3 +142,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+function showCart(itemName, itemPrice, itemImage) {
+    document.getElementById('itemTitle').innerText = itemName;
+    document.getElementById('itemPrice').innerText = `Price: $${itemPrice}`;
+    document.getElementById('itemImage').src = itemImage;
+    document.getElementById('cartModal').style.display = 'block';
+}
+
+function addToCart() {
+    const quantity = document.getElementById('quantity').value;
+    alert(`Added ${quantity} item(s) to your cart!`);
+    document.getElementById('cartModal').style.display = 'none';
+}
