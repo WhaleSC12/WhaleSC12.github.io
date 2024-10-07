@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cartModal.style.display = 'none';
         }
     });
-});
+
 
 // Function to handle adding items to the cart
 function addToCart() {
