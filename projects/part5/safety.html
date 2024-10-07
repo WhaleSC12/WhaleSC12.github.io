@@ -1,45 +1,72 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Safety</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bat Safety</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-    <p class="heading">Bat Safety</p>
-    <nav class="navigation-bar">
-        <ul class="navigation-list">
-            <li><a href="index">Home</a></li>
-            <li><a href="contact">Contact</a></li>
-            <li><a href="news">Bat News</a></li>
-            <li><a href="shop">Shop</a></li>
-            <li><a href="safety">Bat Safety</a></li>
-            <li><a href="breeds">Bat Breeds</a></li>
-        </ul>
-    </nav>
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="news.html">Bat News</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="safety.html">Bat Safety</a></li>
+                <li><a href="breeds.html">Bat Breeds</a></li>
+            </ul>
+            <div class="logo">Bat Conservation</div>
+        </nav>
+    </header>
+
     <main class="container">
+        <h1>Bat Safety Guide</h1>
 
-        <img class="logo" src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Halloween-PNG-Pictures/Halloween_Bat_Silhouette_PNG_Clipart.png?m=1634115382" alt="Logo">
-        
-        <h1>Bat Safety</h1>
-        <div class="bat-safety-content">
-            <div>
-                <h2>How to Interact Safely</h2>
-                <p>To interact safely with a bat, you need to cover your body completely to avoid bites, and only touch them if necessary.</p>
+        <section class="bat-safety-content">
+            <div class="safety-section">
+                <h2>How to Handle a Bat Safely</h2>
+                <p>When handling a bat, always wear thick gloves and avoid direct contact with your skin. Bats can carry diseases like rabies, so it’s crucial to minimize exposure.</p>
+                <p>Use a towel or cloth to gently pick up the bat, and place it in a secure container (e.g., a box with air holes) to transport it safely.</p>
             </div>
-            <div class="bat-safety-image">
-                <img src="bat-image.jpg" alt="Bat Handling">
-            </div>
-            <div>
-                <h2>How to Treat a Bat Wound</h2>
-                <p>Apply neosporin and go to the hospital immediately. Bats are not venomous, but there is a huge risk of rabies and other diseases, so you should seek medical treatment swiftly.</p>
-            </div>
-        </div>
 
+            <div class="safety-image">
+                <p><strong>Image Placeholder: How to Handle a Bat Safely</strong></p>
+                <img src="images/placeholder1.jpg" alt="Handling a Bat">
+            </div>
+
+            <div class="safety-section">
+                <h2>Important Safety Measures</h2>
+                <p>Avoid trying to catch or handle a bat if you are untrained. If you find a bat indoors, close all interior doors and open windows to allow it to fly out safely.</p>
+                <p>If the bat does not leave on its own, contact local wildlife professionals for assistance.</p>
+            </div>
+
+            <div class="safety-image">
+                <p><strong>Image Placeholder: Releasing a Bat Safely</strong></p>
+                <img src="images/placeholder2.jpg" alt="Releasing a Bat">
+            </div>
+
+            <div class="safety-section">
+                <h2>How to Treat a Bat Bite or Scratch</h2>
+                <p>If bitten or scratched by a bat, wash the wound immediately with soap and water, apply an antiseptic like Neosporin, and seek medical attention immediately to assess rabies exposure risks.</p>
+                <p>Inform the healthcare provider about the bat interaction to receive appropriate post-exposure treatment if necessary.</p>
+            </div>
+
+            <div class="safety-image">
+                <p><strong>Image Placeholder: Treating a Bat Bite</strong></p>
+                <img src="images/placeholder3.jpg" alt="Treating a Bat Bite">
+            </div>
+        </section>
     </main>
-        
 
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>

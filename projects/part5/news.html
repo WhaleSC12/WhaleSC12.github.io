@@ -1,37 +1,67 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>News</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bat News</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p class="heading">News</p>
-    <nav class="navigation-bar">
-        <ul class="navigation-list">
-            <li><a href="index">Home</a></li>
-            <li><a href="contact">Contact</a></li>
-            <li><a href="news">Bat News</a></li>
-            <li><a href="shop">Shop</a></li>
-            <li><a href="safety">Bat Safety</a></li>
-            <li><a href="breeds">Bat Breeds</a></li>
-        </ul>
-    </nav>
-   
-  </head>
-  <main class="container">
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="news.html">Bat News</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="safety.html">Bat Safety</a></li>
+                <li><a href="breeds.html">Bat Breeds</a></li>
+            </ul>
+            <div class="logo">Bat Conservation</div>
+        </nav>
+    </header>
 
-    <img class="logo" src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Halloween-PNG-Pictures/Halloween_Bat_Silhouette_PNG_Clipart.png?m=1634115382" alt="Logo">
+    <main class="container">
+        <h1>Bat News</h1>
+        <section class="news-gallery">
+            <!-- Article 1 -->
+            <div class="news-item">
+                <img src="images/white-nose-syndrome.jpg" alt="White-Nose Syndrome">
+                <div class="news-content">
+                    <h2>Potential New Cure for White-Nose Syndrome?</h2>
+                    <p class="author">By Ava Sain</p>
+                    <p>Researchers at the Institute of Arizona think they have found a cure for white-nose syndrome. Early trials show remarkable recovery in bats with the disease and suggest that they will be successful in curing the disease responsible for killing hundreds of thousands of bats a year.</p>
+                </div>
+            </div>
 
+            <!-- Article 2 -->
+            <div class="news-item">
+                <img src="images/windmill-bat-deaths.jpg" alt="Bat Deaths by Windmills">
+                <div class="news-content">
+                    <h2>Latest Report on Bat Deaths by Windmills</h2>
+                    <p class="author">By John Wilfong</p>
+                    <p>The latest report on bat deaths due to windmills in the Greater Carolina area is grim. Over 400 bats have died flying into North Carolina windmills in 2023 alone. Authorities are now looking into temporary measures to deal with the problem.</p>
+                </div>
+            </div>
 
-    <span class="textone">Potential new cure for<br>white-nose syndrome?</span>
-    <div class="textwo"></div><span class="textthree">By Ava Sain</span><span class="textfour">Researchers at the institute of Arizona think they have found a cure for white-nose syndrome. Early trials show remarkable recovery in bats with the disease and suggest that they will be successful in curing the disease responsible for killing hundreds of thousands of bats a year.</span>
-    <span class="textfive">Latest report on bat<br>deaths by wind-mills:</span>
-    <div class="textsix"></div><span class="textseven">By John Wilfong</span><span class="texteight">The latest report on bat deaths due to wind mills in the greater carolina area are grim. So far over 400 bats have died flying into North Carolina wind-mills in 2023 alone. Authorities are now looking into temporary measures to deal with the problem.</span></body>
-</main>
+            <!-- Article 3 -->
+            <div class="news-item">
+                <img src="images/bat-rehabilitation.jpg" alt="Bat Rehabilitation">
+                <div class="news-content">
+                    <h2>New Efforts in Bat Rehabilitation Centers</h2>
+                    <p class="author">By Moses Young</p>
+                    <p>A new rehabilitation center for injured bats has recently opened in Austin, Texas. The center focuses on treating bats affected by urbanization, providing them with a safe space to recover before being released back into the wild. The efforts are part of a larger initiative to preserve North American bat populations and mitigate the impact of habitat loss.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
