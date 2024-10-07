@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Bat breeds modal functionality
     const bats = [
-       
         {
             name: "Big Brown Bat",
             img: "images/bigbrownbat.jpg",
@@ -109,8 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
             notable: "Yellowish fur provides good camouflage.",
             countries: "Southern USA"
         }
-
-           
     ];
 
     const galleryItems = document.querySelectorAll('.gallery-item img');
