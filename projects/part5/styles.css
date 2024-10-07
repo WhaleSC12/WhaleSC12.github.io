@@ -484,3 +484,22 @@ p, h2 {
 }
 
 
+
+.image-placeholder {
+    max-width: 45%; /* Ensure image doesn't take the entire screen width */
+    text-align: center;
+    margin: 10px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    margin: 20px;
+}

@@ -1,7 +1,10 @@
 // Correct the duplicate toggleMenu function
 function toggleMenu() {
     const navLinks = document.getElementById("navLinks");
+    const navLinks = document.getElementById("navLinks");
     navLinks.classList.toggle("active");
+    const mobileNav = document.getElementById("mobileNav");
+    mobileNav.style.width = (mobileNav.style.width === "250px") ? "0" : "250px";
 }
 
 function closeMenu() {
