@@ -1,10 +1,7 @@
+// Correct the duplicate toggleMenu function
 function toggleMenu() {
     const navLinks = document.getElementById("navLinks");
     navLinks.classList.toggle("active");
-}
-
-function toggleMenu() {
-    document.getElementById("mobileNav").style.width = "250px";
 }
 
 function closeMenu() {
@@ -42,8 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(() => changeSlide(1), 5000);
 });
 
-
-//bat breeds
+// Bat breeds modal functionality
 document.addEventListener('DOMContentLoaded', () => {
     const bats = [
         {
@@ -119,18 +115,28 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const galleryItems = document.querySelectorAll('.gallery-item img');
+    const batModal = document.getElementById('batModal');
+    const batTitle = document.getElementById('batTitle');
+    const batDetails = document.getElementById('batDetails');
 
     galleryItems.forEach((item, index) => {
         item.addEventListener('click', () => {
             const bat = bats[index];
-            document.getElementById('batTitle').innerText = bat.name;
-            document.getElementById('batDetails').innerHTML = `
+            batTitle.innerText = bat.name;
+            batDetails.innerHTML = `
                 <img src="${bat.img}" alt="${bat.name}" style="width:100%">
                 <p><strong>Conservation Status:</strong> ${bat.conservationStatus}</p>
                 <p><strong>Notable Features:</strong> ${bat.notable}</p>
                 <p><strong>Countries Found In:</strong> ${bat.countries}</p>
             `;
-            document.getElementById('batModal').style.display = 'block';
+            batModal.style.display = 'block';
         });
+    });
+
+    // Close modal when clicking outside of content
+    window.addEventListener('click', (event) => {
+        if (event.target == batModal) {
+            batModal.style.display = 'none';
+        }
     });
 });

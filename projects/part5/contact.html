@@ -1,38 +1,60 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p class="heading">Contact us</p>
-    <nav class="navigation-bar">
-        <ul class="navigation-list">
-            <li><a href="index">Home</a></li>
-            <li><a href="contact">Contact</a></li>
-            <li><a href="news">Bat News</a></li>
-            <li><a href="shop">Shop</a></li>
-            <li><a href="safety">Bat Safety</a></li>
-            <li><a href="breeds">Bat Breeds</a></li>
-        </ul>
-    </nav>
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="news.html">Bat News</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="safety.html">Bat Safety</a></li>
+                <li><a href="breeds.html">Bat Breeds</a></li>
+            </ul>
+            <div class="logo">Bat Conservation</div>
+        </nav>
+    </header>
+
+    <main class="container contact-container">
+        <!-- Left Image Placeholder -->
+        <div class="image-placeholder">
+            <img src="images/conservation2.jpg" alt="conservation 2">
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <img class="logo" src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Halloween-PNG-Pictures/Halloween_Bat_Silhouette_PNG_Clipart.png?m=1634115382" alt="Logo">
+            <p class="contacttext">
+                Our hotline: <br> (803) 593-9440 <br><br>
+                South Carolina Department of National Resources: <br> (803) 432-444 <br><br>
+                Reach out to us at our email: <br> ConserveBat@outlook.com
+            </p>
+            <p class="locations">
+                We have locations in: <br>
+                - Winchester, Virginia <br>
+                - Memphis, Tennessee <br>
+                - Mexico City, Mexico <br>
+                - Prince Rupert, British Columbia <br>
+                - Halifax, Nova Scotia
+            </p>
+        </div>
+
+        <!-- Right Image Placeholder -->
+        <div class="image-placeholder">
+            <img src="images/conservation.jpg" alt="conservation">
+        </div>
+    </main>
 
     <main class="container">
-        <img class="logo" src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Halloween-PNG-Pictures/Halloween_Bat_Silhouette_PNG_Clipart.png?m=1634115382" alt="Logo">
-
-        <p class="contacttext">Our hotline: <br> (803)593-9440 <br>
-        South Carolina Department of National Resources: <br> (803)432-444 <br>
-        Reach out to us at our email: <br> ConserveBat@outlook.com</p>
-            We have locations in --winchester, virginia <br>--memphis,tennessee <br>--Mexico City, Mexico<br> --Prince Rupert, British Columbia<br> --Halifax, Nova Scotia
-        <img src="North-America-Map.png" alt="map">  
-    </main>  
-    
-    <main class="container">
-        <h1>Job Application Form</h1>
-        <form action="submit_application.php" method="post" class="job-application-form">
+        <h1 class="form-title">Job Application Form</h1>
+        <form action="submit_application.php" method="post" class="job-application-form centered-form">
             <div class="form-group">
                 <label for="fullName">Full Name:</label>
                 <input type="text" id="fullName" name="fullName" required>
@@ -92,6 +114,5 @@
             navLinks.classList.toggle("active");
         }
     </script>
-
 </body>
 </html>
