@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+});
 
     // Bat breeds modal functionality
     const bats = [
