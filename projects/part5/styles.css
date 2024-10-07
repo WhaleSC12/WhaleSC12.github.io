@@ -9,11 +9,113 @@ html, body {
   perspective-origin: center;
 }
 
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gallery-item {
+  width: 200px;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+
+.header {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.nav-links a:hover {
+  color: #ff9800;
+}
+
+.bird-card {
+  background-color: #ffffff;
+  border: 2px solid #4caf50;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      width: 200px;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .hamburger {
+      display: block;
+  }
+}
+
+
 body {
   transform-style: preserve-3d;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #f0f0f0;
+  color: #333;
+  font-family: Arial, sans-serif;
+
 }
 
 p, h2 {
