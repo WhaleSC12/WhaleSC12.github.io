@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Bat breeds modal functionality
     const bats = [
+       
         {
             name: "Big Brown Bat",
             img: "images/bigbrownbat.jpg",
@@ -109,6 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
             countries: "Southern USA"
         }
 
+           
     ];
 
     const galleryItems = document.querySelectorAll('.gallery-item img');
@@ -177,5 +179,3 @@ function addToCart() {
     alert(`Added ${quantity} item(s) to your cart!`);
     document.getElementById('cartModal').style.display = 'none';
 }
-
-        
