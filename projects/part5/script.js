@@ -1,17 +1,21 @@
-// Correct the duplicate toggleMenu function
 function toggleMenu() {
     const navLinks = document.getElementById("navLinks");
-    const navLinks = document.getElementById("navLinks");
     navLinks.classList.toggle("active");
+    
     const mobileNav = document.getElementById("mobileNav");
-    mobileNav.style.width = (mobileNav.style.width === "250px") ? "0" : "250px";
+    if (mobileNav) {
+        mobileNav.style.width = (mobileNav.style.width === "250px") ? "0" : "250px";
+    }
 }
 
 function closeMenu() {
-    document.getElementById("mobileNav").style.width = "0";
+    const mobileNav = document.getElementById("mobileNav");
+    if (mobileNav) {
+        mobileNav.style.width = "0";
+    }
 }
 
-// carousel
+// Carousel functionality
 let currentSlide = 0;
 
 function showSlide(index) {
@@ -42,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Optional: Auto-slide every 5 seconds
     setInterval(() => changeSlide(1), 5000);
 });
-
 
 // Bat breeds modal functionality
 document.addEventListener('DOMContentLoaded', () => {
@@ -145,7 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
 
 function showCart(itemName, itemPrice, itemImage) {
     document.getElementById('itemTitle').innerText = itemName;
