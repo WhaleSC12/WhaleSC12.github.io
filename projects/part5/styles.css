@@ -11,21 +11,20 @@ html, body {
 /*carousel*/
 .carousel {
   position: relative;
-  max-width: 75%; /* Set carousel width to 75% of the screen */
-  margin: 20px auto; /* Center the carousel */
+  max-width: 75%; /* Reduce the carousel width to 75% of the viewport */
+  margin: 20px auto; /* Center the carousel horizontally */
   overflow: hidden;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for visual appeal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-container {
   display: flex;
-  width: calc(100% * 3); /* Use a calculation to adjust based on slide count */
   transition: transform 0.5s ease-in-out;
 }
 
 .carousel-slide {
-  flex: 1 0 100%; /* Make each slide take up the full width of the container */
+  flex: 1 0 100%;
   max-width: 100%;
 }
 
@@ -35,6 +34,7 @@ html, body {
   border-radius: 15px;
 }
 
+/* Make sure the buttons are positioned correctly */
 .carousel-btn {
   position: absolute;
   top: 50%;
