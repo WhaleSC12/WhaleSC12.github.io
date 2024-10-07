@@ -9,6 +9,43 @@ html, body {
   perspective-origin: center;
 }
 
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
 
 .gallery {
   display: flex;
@@ -35,10 +72,6 @@ html, body {
 }
 
 
-.header {
-  background-color: #4caf50;
-  color: #fff;
-}
 
 .nav-links a:hover {
   color: #ff9800;
@@ -65,13 +98,15 @@ html, body {
   align-items: center;
 }
 
-.logo {
-font-size: 24px;
-}
+
 
 .nav-links {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  order: 2;
+
 }
 
 .nav-links li {
@@ -87,6 +122,8 @@ font-size: 24px;
   display: none;
   font-size: 30px;
   cursor: pointer;
+  order: 1;
+
 }
 
 @media (max-width: 768px) {
@@ -296,6 +333,8 @@ p, h2 {
 
 /* Logo Styling */
 .logo {
+  font-size: 24px;
+  order: 3;
   position: fixed;
   top: 20px;
   left: 20px;
