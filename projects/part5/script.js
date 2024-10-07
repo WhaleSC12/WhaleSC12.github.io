@@ -1,54 +1,42 @@
-function toggleMenu() {
-    const navLinks = document.getElementById("navLinks");
-    navLinks.classList.toggle("active");
-    
-    const mobileNav = document.getElementById("mobileNav");
-    if (mobileNav) {
-        mobileNav.style.width = (mobileNav.style.width === "250px") ? "0" : "250px";
-    }
-}
-
-function closeMenu() {
-    const mobileNav = document.getElementById("mobileNav");
-    if (mobileNav) {
-        mobileNav.style.width = "0";
-    }
-}
-
-// Carousel functionality
-let currentSlide = 0;
-
-function showSlide(index) {
-    const slides = document.querySelectorAll('.carousel-slide');
-    const totalSlides = slides.length;
-
-    // Loop around when index exceeds bounds
-    if (index >= totalSlides) {
-        currentSlide = 0;
-    } else if (index < 0) {
-        currentSlide = totalSlides - 1;
-    } else {
-        currentSlide = index;
-    }
-
-    // Calculate offset for translation
-    const offset = -currentSlide * 100;
-    document.querySelector('.carousel-container').style.transform = `translateX(${offset}%)`;
-}
-
-function changeSlide(direction) {
-    showSlide(currentSlide + direction);
-}
-
 document.addEventListener('DOMContentLoaded', () => {
+    // Hamburger menu toggle
+    document.querySelector('.hamburger').addEventListener('click', () => {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('active');
+    });
+
+    // Carousel functionality
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        const slides = document.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+
+        if (index >= totalSlides) {
+            currentSlide = 0;
+        } else if (index < 0) {
+            currentSlide = totalSlides - 1;
+        } else {
+            currentSlide = index;
+        }
+
+        const offset = -currentSlide * 100;
+        document.querySelector('.carousel-container').style.transform = `translateX(${offset}%)`;
+    }
+
+    function changeSlide(direction) {
+        showSlide(currentSlide + direction);
+    }
+
+    document.querySelector('.prev')?.addEventListener('click', () => changeSlide(-1));
+    document.querySelector('.next')?.addEventListener('click', () => changeSlide(1));
+
     showSlide(currentSlide);
 
     // Optional: Auto-slide every 5 seconds
     setInterval(() => changeSlide(1), 5000);
-});
 
-// Bat breeds modal functionality
-document.addEventListener('DOMContentLoaded', () => {
+    // Bat breeds modal functionality
     const bats = [
         {
             name: "Big Brown Bat",
@@ -120,6 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
             notable: "Yellowish fur provides good camouflage.",
             countries: "Southern USA"
         }
+
     ];
 
     const galleryItems = document.querySelectorAll('.gallery-item img');
@@ -127,37 +116,66 @@ document.addEventListener('DOMContentLoaded', () => {
     const batTitle = document.getElementById('batTitle');
     const batDetails = document.getElementById('batDetails');
 
-    galleryItems.forEach((item, index) => {
-        item.addEventListener('click', () => {
-            const bat = bats[index];
-            batTitle.innerText = bat.name;
-            batDetails.innerHTML = `
-                <img src="${bat.img}" alt="${bat.name}" style="width:100%">
-                <p><strong>Conservation Status:</strong> ${bat.conservationStatus}</p>
-                <p><strong>Notable Features:</strong> ${bat.notable}</p>
-                <p><strong>Countries Found In:</strong> ${bat.countries}</p>
-            `;
-            batModal.style.display = 'block';
+    if (galleryItems.length > 0 && batModal) {
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                const bat = bats[index];
+                if (bat) {
+                    batTitle.innerText = bat.name;
+                    batDetails.innerHTML = `
+                        <img src="${bat.img}" alt="${bat.name}" style="width:100%">
+                        <p><strong>Conservation Status:</strong> ${bat.conservationStatus}</p>
+                        <p><strong>Notable Features:</strong> ${bat.notable}</p>
+                        <p><strong>Countries Found In:</strong> ${bat.countries}</p>
+                    `;
+                    batModal.style.display = 'block';
+                }
+            });
         });
-    });
 
-    // Close modal when clicking outside of content
-    window.addEventListener('click', (event) => {
-        if (event.target == batModal) {
-            batModal.style.display = 'none';
-        }
-    });
+        // Close modal when clicking outside of content
+        window.addEventListener('click', (event) => {
+            if (event.target == batModal) {
+                batModal.style.display = 'none';
+            }
+        });
+    }
+
+    // Shop cart modal functionality
+    const shopItems = document.querySelectorAll('.shop-item');
+    const cartModal = document.getElementById('cartModal');
+    const itemTitle = document.getElementById('itemTitle');
+    const itemPrice = document.getElementById('itemPrice');
+    const itemImage = document.getElementById('itemImage');
+
+    if (shopItems.length > 0 && cartModal) {
+        shopItems.forEach((item) => {
+            item.addEventListener('click', () => {
+                const itemName = item.querySelector('p').innerText.split('\n')[0];
+                const itemCost = item.querySelector('p').innerText.split('$')[1];
+                const imgSrc = item.querySelector('img').src;
+
+                itemTitle.innerText = itemName;
+                itemPrice.innerText = `Price: $${itemCost}`;
+                itemImage.src = imgSrc;
+                cartModal.style.display = 'block';
+            });
+        });
+
+        // Close modal when clicking outside of content
+        window.addEventListener('click', (event) => {
+            if (event.target == cartModal) {
+                cartModal.style.display = 'none';
+            }
+        });
+    }
 });
 
-function showCart(itemName, itemPrice, itemImage) {
-    document.getElementById('itemTitle').innerText = itemName;
-    document.getElementById('itemPrice').innerText = `Price: $${itemPrice}`;
-    document.getElementById('itemImage').src = itemImage;
-    document.getElementById('cartModal').style.display = 'block';
-}
-
+// Function to handle adding items to the cart
 function addToCart() {
     const quantity = document.getElementById('quantity').value;
     alert(`Added ${quantity} item(s) to your cart!`);
     document.getElementById('cartModal').style.display = 'none';
 }
+
+        
