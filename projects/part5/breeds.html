@@ -69,17 +69,15 @@
         </div>
     </section>
 
-    <div id="batModal" class="w3-modal" style="display: none;">
-        <div class="w3-modal-content w3-animate-top w3-card-4">
-            <header class="w3-container w3-teal">
-                <span onclick="document.getElementById('batModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                <h2 id="batTitle"></h2>
-            </header>
-            <div class="w3-container" id="batDetails"></div>
+    <div id="batModal" class="w3-modal modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4 modal-content">
+            <span class="close-modal w3-button w3-display-topright" onclick="document.getElementById('batModal').style.display='none'">&times;</span>
+            <h2 id="batTitle"></h2>
+            <div id="batDetails"></div>
         </div>
     </div>
+    
 
-    <!-- Include script.js at the bottom to ensure all elements are loaded -->
     <script src="script.js"></script>
 </body>
 </html>
