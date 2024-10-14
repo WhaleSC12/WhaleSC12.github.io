@@ -1,18 +1,26 @@
-async function fetchIceCreamData() {
+async function fetchIceCreams() {
     const response = await fetch('https://portiaportia.github.io/json/ice-creams.json');
     const data = await response.json();
-    displayIceCreams(data);
-}
+    const iceCreamContainer = document.getElementById('iceCreamContainer');
 
-function displayIceCreams(iceCreams) {
-    const container = document.querySelector('.ice-cream-container');
-    iceCreams.forEach(iceCream => {
-        const imgElement = document.createElement('img');
-        imgElement.src = `https://portiaportia.github.io/json/images/ice-creams/${iceCream.image}`;
-        imgElement.alt = iceCream.name;
-        imgElement.classList.add('ice-cream');
-        container.appendChild(imgElement);
+    data.forEach(iceCream => {
+        // Filter out '-2' images
+        if (!iceCream.image.includes('-2')) {
+            const iceCreamCard = document.createElement('div');
+            iceCreamCard.classList.add('ice-cream-card');
+
+            const img = document.createElement('img');
+            img.src = `https://portiaportia.github.io/json/images/ice-creams/${iceCream.image}`;
+
+            const overlay = document.createElement('div');
+            overlay.classList.add('overlay');
+            overlay.innerText = iceCream.description; // Assuming 'description' exists in JSON data
+
+            iceCreamCard.appendChild(img);
+            iceCreamCard.appendChild(overlay);
+            iceCreamContainer.appendChild(iceCreamCard);
+        }
     });
 }
 
-fetchIceCreamData();
+fetchIceCreams();
