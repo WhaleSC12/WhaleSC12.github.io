@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation and Header -->
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="logo-container">
+                <img src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Halloween-PNG-Pictures/Halloween_Bat_Silhouette_PNG_Clipart.png?m=1634115382" alt="Logo" class="logo">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="news.html">Bat News</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="safety.html">Bat Safety</a></li>
+                <li><a href="breeds.html">Bat Breeds</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Contact Form Section -->
+    <main class="container contact-container">
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Our hotline: <br> (803) 593-9440</p>
+            <p>South Carolina Department of National Resources: <br> (803) 432-444</p>
+            <p>Email us: <br> <a href="mailto:ConserveBat@outlook.com">ConserveBat@outlook.com</a></p>
+
+            <p class="locations">
+                We have locations in: <br>
+                - Winchester, Virginia <br>
+                - Memphis, Tennessee <br>
+                - Mexico City, Mexico <br>
+                - Prince Rupert, British Columbia <br>
+                - Halifax, Nova Scotia
+            </p>
+        </div>
+
+        <form method="POST" id="contactForm">
+            <input type="hidden" name="access_key" value="ef44738c-15f3-4d1e-8f04-8d637fd94678">
+            <input type="hidden" name="subject" value="New Submission from Web3Forms">
+            <input type="checkbox" name="botcheck" id="" style="display: none;">
+        
+            <!-- Custom Form Fields -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" name="phone" id="phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="4" required></textarea>
+            </div>
+        
+            <button type="submit">Submit</button>
+            <div id="result"></div>
+        </form>
+        
+
+        <!-- Embedded Map -->
+        <div class="iframe-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." 
+                    width="600" height="450" style="border:0;" allowfullscreen="" 
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
