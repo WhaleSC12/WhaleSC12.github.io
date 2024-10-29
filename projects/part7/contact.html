@@ -60,15 +60,45 @@
         </form>
 
 
-        <div class="video-container">
-            <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/wg1Dy4DfB_s" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
+        <div class="video-player" data-videoid="wg1Dy4DfB_s">
+            <!-- This div will load the thumbnail and display the play button -->
         </div>
+        <script>
+            window.addEventListener("DOMContentLoaded", function() {
+              document.querySelectorAll(".video-player").forEach(function(current) {
+          
+                let videoid = current.dataset.videoid;
+          
+                /* load youtube thumbnail as background image */
+                current.style.backgroundImage = "url(https://i3.ytimg.com/vi/" + videoid + "/hqdefault.jpg)";
+          
+                /* create iframe to hold video player */
+                let playerFrame = document.createElement("iframe");
+                playerFrame.setAttribute("allowfullscreen", "");
+                playerFrame.setAttribute("frameborder", 0);
+          
+                /* create play button */
+                let playButton = document.createElement("a");
+                playButton.href = "#";
+                playButton.title = "click to play video";
+          
+                /* insert elements into container */
+                current.appendChild(playerFrame);
+                current.appendChild(playButton);
+          
+                /* initialize click event to load video into iframe */
+                current.addEventListener("click", function(e) {
+                  e.preventDefault();
+                  playerFrame.style.display = "block";
+                  playerFrame.src = "https://www.youtube.com/embed/" + videoid + "?autoplay=1";
+                  playButton.style.display = "none";
+                  current.style.backgroundImage = "none"; // Remove background thumbnail
+                });
+          
+              });
+            });
+          </script>
+                  
         
         
         <script>
